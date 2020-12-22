@@ -27,6 +27,13 @@ module.exports = {
     module: {
         rules: [
             {
+                test: require.resolve('jquery'), // Без него не работал jQuery
+                loader: 'expose-loader',
+                options: {
+                    exposes: ['$', 'jQuery'],
+                },
+            },
+            {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: '/node_modules/'
@@ -106,6 +113,6 @@ module.exports = {
             patterns: [
                 { from: './src/blocks/_common/fonts/', to: './fonts' }
             ]
-        })
+        }),
     ]
 }
