@@ -1,0 +1,14 @@
+mixin star-rating-floating(count, rating)
+    - let i = 1
+    .star-rating-floating
+        .star-rating__current(data-rating=`${rating}`)
+            while i <= count
+                i(data-value=`${i+1}`).material-icons.star-rating__icon star
+                - i++
+            - i = 1
+
+        .star-rating__user
+            while i <= count
+                i(data-value=`${i+1}`).material-icons.star-rating__icon star_border
+                - i++
+

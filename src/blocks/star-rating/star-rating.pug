@@ -1,0 +1,10 @@
+mixin star-rating(count, rating)
+    - let i = 1
+    - let roundRating = Math.round(rating)
+    .star-rating
+        while i <= count
+            if i <= roundRating
+                i(data-value=`${i+1}`).material-icons.star-rating__icon star
+            else 
+                i(data-value=`${i+1}`).material-icons.star-rating__icon star_border
+            - i++

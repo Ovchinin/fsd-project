@@ -1,0 +1,20 @@
+@import '../_common/scss/vars.scss';
+
+.star-rating-floating {
+    position: relative;
+    display: inline-block;
+}
+
+.star-rating__current {
+    position: absolute;
+    overflow: hidden;
+    //width: 80%;
+    white-space: nowrap;
+}
+
+.star-rating__icon {
+    background: $purpleGradient;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}

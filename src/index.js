@@ -1,0 +1,6 @@
+import './blocks/_common/scss/main.scss'
+import './blocks/text-field/text-field.js'
+import './blocks/like-button/like-button.js'
+import './blocks/star-rating/star-rating.js'
+import './blocks/star-rating/star-rating-floating.js'
+import './blocks/range-slider/range-slider.js'

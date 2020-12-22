@@ -1,0 +1,27 @@
+mixin button(style, text, icon=false)
+    - let styleBtn = style
+    case styleBtn 
+        when 'full'
+            if icon
+                a.button-full=text 
+                    i.button__icon='arrow_forward'
+            else 
+                a.button-full=text
+        when 'border'
+            if icon
+                a.button-border=text 
+                    i.button__icon='arrow_forward'
+            else 
+                a.button-border=text
+        when 'link'
+            if icon
+                a.button-link=text 
+                    i.button__icon='arrow_forward'
+            else 
+                a.button-link=text
+        when '100%'
+            if icon
+                a.button-100=text 
+                    i.button__icon='arrow_forward'
+            else 
+                a.button-100=text        

@@ -1,0 +1,52 @@
+@import '../_common/scss/vars.scss';
+
+// mixin radio-buttons
+
+.radio-buttons__item {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .radio-buttons__input {
+    appearance: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $darkShade25;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .radio-buttons__input:checked {
+    border: 1px solid #BC9CFF;
+  }
+  
+  .radio-buttons__input:checked::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 3px;
+    top: 3px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 10px;
+    transition: .2s;
+  }
+  
+  .radio-buttons__label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkShade50;
+    cursor: pointer;
+  }
+  
+  .radio-buttons__input:checked + .radio-buttons__label {
+    color: $darkShade75;
+  }
+  
+  // ----------- end mixin radio-buttons

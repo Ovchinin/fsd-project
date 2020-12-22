@@ -1,0 +1,65 @@
+@import '~ion-rangeslider/css/ion.rangeSlider.css';
+@import '../_common/scss/vars.scss';
+
+.irs--flat {
+    width: 266px;
+}
+
+.irs--flat .irs-line {
+    height: 6px;
+    background-color: #FFFFFF;
+    /* Dark 25% */
+    border: 1px solid $darkShade25;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.irs--flat .irs-bar {
+    position: absolute;
+    height: 6px;
+    background: $greenGradient;
+    border-radius: 3px;
+}
+
+.irs--flat .irs-handle {
+    width: 12px;
+    height: 12px;
+    background: $greenGradient;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.irs--flat .irs-handle > i {
+    display: none !important;
+}
+
+.irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
+    display: none !important;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* identical to box height */
+    text-align: right;
+    text-transform: uppercase;
+
+    /* Dark 50% */
+    color: rgba(31, 32, 65, 0.5);
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to {
+    visibility: hidden !important;
+}
+
+.irs--flat .irs-single {
+    visibility: visible !important;
+    left: 65% !important;
+}

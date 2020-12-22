@@ -1,0 +1,61 @@
+@import '../_common/scss/vars.scss';
+
+// mixin checkbox
+
+.checkbox__item {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkbox__input {
+    appearance: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $darkShade25;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .checkbox__input:checked {
+    border: 1px solid $purple;
+  }
+  
+  .checkbox__input:checked::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    width: 6px;
+    height: 3px;
+    background: $purpleGradient;
+    transform: rotate(45deg);
+    transition: .2s;
+  }
+  
+  
+  .checkbox__input:checked::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    width: 8px;
+    height: 3px;
+    background: $purpleGradient;
+    transform: rotate(135deg);
+    transition: .2s;
+  }
+  
+  .checkbox__label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkShade50;
+    cursor: pointer;
+  }
+  
+  // ----------- end mixin mixin checkbox

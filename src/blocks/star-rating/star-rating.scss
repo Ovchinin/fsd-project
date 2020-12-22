@@ -1,0 +1,8 @@
+@import '../_common/scss/vars.scss';
+
+.star-rating__icon {
+    background: $purpleGradient;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}

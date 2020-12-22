@@ -1,0 +1,54 @@
+@import './fonts.scss';
+@import './vars.scss';
+@import './reset.scss';
+@import '../../text-field/text-field.scss';
+@import '../../toggle/toggle.scss';
+@import '../../radio-buttons/radio-buttons.scss';
+@import '../../checkbox/checkbox.scss';
+@import '../../like-button/like-button.scss';
+@import '../../star-rating/star-rating.scss';
+@import '../../star-rating/star-rating-floating.scss';
+@import '../../button/button.scss';
+@import '../../range-slider/range-slider.scss';
+
+body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkShade75;
+}
+
+.container {
+    width: 720px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: $darkShade100;
+}
+
+h2 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: $darkShade100;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $darkShade100;
+}

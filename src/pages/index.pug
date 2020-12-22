@@ -1,0 +1,51 @@
+extends ../templates/main.pug
+include ../bundles/index.bundle.pug
+
+block variable
+    - var title = 'Home page';
+
+block main
+    section
+        .container
+            +text-field('Text Field', 'name label', 'Email') 
+            br
+
+            +toggle('Получать спецпредложения', 'toggle')
+            br
+
+            +radio-buttons('Ben', [
+                {name: 'Cream', value: '1'}, 
+                {name: 'Cheese', value: '2'}, 
+            ])
+            br
+
+            +checkbox('check', [
+                {name: 'Cream', value: '1'}, 
+                {name: 'Cheese', value: '2'}, 
+            ])
+            br
+
+            +like-button('like', 5, 'favorite_border')
+            +like-button('like', 15)
+            br
+
+            +star-rating(5, 2.5)
+            +star-rating(7, 4.7)
+            br
+            +star-rating-floating(5, 2.6)
+            br
+            +star-rating-floating(7, 4.5)
+            br
+
+            +button('full', 'click me')
+            br
+            br
+            +button('border', 'click me')
+            br
+            +button('link', 'click me')
+            br
+            +button('100%', 'перейти к оплате', true)
+            br
+            +range-slider
+            br
+            +range-slider

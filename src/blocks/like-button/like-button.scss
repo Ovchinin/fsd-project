@@ -1,0 +1,67 @@
+@import '../_common/scss/vars.scss';
+
+// mixin like-button
+
+.like-button {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    box-sizing: border-box;
+    background: #fff;
+    background-clip: padding-box;
+    border: 1px solid $darkShade25;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.like-button_active:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -1px;
+    border-radius: inherit;
+    background: $purpleGradient;
+}
+
+.like-button_active {
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.like-button__icon {
+    width: auto;
+    margin-left: 4px;
+    font-size: 10px;
+    color: $darkShade25;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.like-button__input {
+    width: 60%;
+    text-align: center;
+    appearance: textfield;
+    color: $darkShade25;
+    background: transparent;
+    cursor: pointer;
+}
+
+.like-button__input_active {
+    color: $purple;
+}
+
+.like-button__icon_active {
+    color: $purple;
+}
+
+  
+// ----- end mixin like-button
