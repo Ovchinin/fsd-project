@@ -1,0 +1,19 @@
+include ../button/button.pug
+
+mixin dropdown-list(title, type, text, items)
+    h3.dropdown-title=title
+    .dropdown-list(class='dropdown--'+type)
+        .dropdown__header
+            .dropdown__header-value(data-title=text)=text
+            i.dropdown__icon='expand_more'
+        .dropdown__list-items
+            each item in items
+                .dropdown__item
+                    p.dropdown__item-title=item
+                    .dropdown__input-control
+                        button.minus(disabled=true) -
+                        input.input(type="number" min="0" max="10" step="1" value="0")
+                        button.plus +
+            .dropdown__button-block
+                +button('link', 'Сбросить')(class="dropdown__clear")
+                +button('link', 'Применить')(class="dropdown__apply")

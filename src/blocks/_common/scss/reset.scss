@@ -58,7 +58,16 @@ textarea {
   -moz-box-shadow: none;
 }
 input, textarea, select, button { outline: none; border: none; font-size: 100%; margin: 0;}
-button, input { line-height: normal; }
+input { line-height: normal; }
+button {
+  line-height: normal; 
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 // Table
 table { border-collapse: collapse; border-spacing: 0; }

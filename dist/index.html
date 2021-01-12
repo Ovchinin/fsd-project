@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-  <link href="/app.css" rel="stylesheet"></head>
+  <link href="/vendors.css" rel="stylesheet"><link href="/app.css" rel="stylesheet"></head>
   <body>
 <header>
   <div class="container"><span>header is here</span></div>
@@ -13,7 +13,7 @@
       <div class="container">
         <div class="text-field">
           <label class="text-field__label" for="name label">Text Field</label>
-          <input class="text-field__input" type="text" id="name label" name="name label" placeholder="введите фио">
+          <input class="text-field__input" type="text" id="name label" name="name label" placeholder="Email">
         </div><br>
         <div class="toggle">
           <input class="toggle__input" type="checkbox" id="toggle" name="toggle">
@@ -28,17 +28,110 @@
             <input class="radio-buttons__input" type="radio" id="radio-buttons-1" value="2" name="Ben">
             <label class="radio-buttons__label" for="radio-buttons-1">Cheese</label>
           </div>
-        </div>
+        </div><br>
         <div class="checkbox">
           <div class="checkbox__item">
-            <undefined></undefined>
             <input class="checkbox__input" type="checkbox" id="checkbox-0" value="1" name="check">
             <label class="checkbox__label" for="checkbox-0">Cream</label>
           </div>
           <div class="checkbox__item">
-            <undefined></undefined>
             <input class="checkbox__input" type="checkbox" id="checkbox-1" value="2" name="check">
             <label class="checkbox__label" for="checkbox-1">Cheese</label>
+          </div>
+        </div><br>
+        <div class="like-button"><i class="material-icons like-button__icon">favorite_border</i>
+          <input class="like-button__input" type="number" id="like" name="like" value="5">
+        </div>
+        <div class="like-button"><i class="material-icons like-button__icon">favorite_border</i>
+          <input class="like-button__input" type="number" id="like" name="like" value="15">
+        </div><br>
+        <div class="star-rating"><i class="material-icons star-rating__icon" data-value="2">star</i><i class="material-icons star-rating__icon" data-value="3">star</i><i class="material-icons star-rating__icon" data-value="4">star</i><i class="material-icons star-rating__icon" data-value="5">star_border</i><i class="material-icons star-rating__icon" data-value="6">star_border</i>
+        </div>
+        <div class="star-rating"><i class="material-icons star-rating__icon" data-value="2">star</i><i class="material-icons star-rating__icon" data-value="3">star</i><i class="material-icons star-rating__icon" data-value="4">star</i><i class="material-icons star-rating__icon" data-value="5">star</i><i class="material-icons star-rating__icon" data-value="6">star</i><i class="material-icons star-rating__icon" data-value="7">star_border</i><i class="material-icons star-rating__icon" data-value="8">star_border</i>
+        </div><br>
+        <div class="star-rating-floating">
+          <div class="star-rating__current" data-rating="2.6"><i class="material-icons star-rating__icon" data-value="2">star</i><i class="material-icons star-rating__icon" data-value="3">star</i><i class="material-icons star-rating__icon" data-value="4">star</i><i class="material-icons star-rating__icon" data-value="5">star</i><i class="material-icons star-rating__icon" data-value="6">star</i>
+          </div>
+          <div class="star-rating__user"><i class="material-icons star-rating__icon" data-value="2">star_border</i><i class="material-icons star-rating__icon" data-value="3">star_border</i><i class="material-icons star-rating__icon" data-value="4">star_border</i><i class="material-icons star-rating__icon" data-value="5">star_border</i><i class="material-icons star-rating__icon" data-value="6">star_border</i>
+          </div>
+        </div><br>
+        <div class="star-rating-floating">
+          <div class="star-rating__current" data-rating="4.5"><i class="material-icons star-rating__icon" data-value="2">star</i><i class="material-icons star-rating__icon" data-value="3">star</i><i class="material-icons star-rating__icon" data-value="4">star</i><i class="material-icons star-rating__icon" data-value="5">star</i><i class="material-icons star-rating__icon" data-value="6">star</i><i class="material-icons star-rating__icon" data-value="7">star</i><i class="material-icons star-rating__icon" data-value="8">star</i>
+          </div>
+          <div class="star-rating__user"><i class="material-icons star-rating__icon" data-value="2">star_border</i><i class="material-icons star-rating__icon" data-value="3">star_border</i><i class="material-icons star-rating__icon" data-value="4">star_border</i><i class="material-icons star-rating__icon" data-value="5">star_border</i><i class="material-icons star-rating__icon" data-value="6">star_border</i><i class="material-icons star-rating__icon" data-value="7">star_border</i><i class="material-icons star-rating__icon" data-value="8">star_border</i>
+          </div>
+        </div><br><a class="button-full">click me</a><br><a class="button-border">click me</a><br><a class="button-link">click me</a><br><a class="button-100">перейти к оплате<i class="button__icon">arrow_forward</i></a><br>
+        <input class="range-slider" type="slider"><br>
+        <input class="range-slider" type="slider"><br>
+        <div class="pagination">
+          <div class="pagination__info"></div>
+        </div><br>
+        <h3 class="dropdown-title">Гости</h3>
+        <div class="dropdown-list dropdown--guest">
+          <div class="dropdown__header">
+            <div class="dropdown__header-value" data-title="Сколько гостей">Сколько гостей</div><i class="dropdown__icon">expand_more</i>
+          </div>
+          <div class="dropdown__list-items">
+            <div class="dropdown__item">
+              <p class="dropdown__item-title">взрослые</p>
+              <div class="dropdown__input-control">
+                <button class="minus" disabled>-</button>
+                <input class="input" type="number" min="0" max="10" step="1" value="0">
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="dropdown__item">
+              <p class="dropdown__item-title">дети</p>
+              <div class="dropdown__input-control">
+                <button class="minus" disabled>-</button>
+                <input class="input" type="number" min="0" max="10" step="1" value="0">
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="dropdown__item">
+              <p class="dropdown__item-title">младенцы</p>
+              <div class="dropdown__input-control">
+                <button class="minus" disabled>-</button>
+                <input class="input" type="number" min="0" max="10" step="1" value="0">
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+            </div>
+          </div>
+        </div>
+        <h3 class="dropdown-title">Удобства</h3>
+        <div class="dropdown-list dropdown--facilities">
+          <div class="dropdown__header">
+            <div class="dropdown__header-value" data-title="Удобства">Удобства</div><i class="dropdown__icon">expand_more</i>
+          </div>
+          <div class="dropdown__list-items">
+            <div class="dropdown__item">
+              <p class="dropdown__item-title">спальни</p>
+              <div class="dropdown__input-control">
+                <button class="minus" disabled>-</button>
+                <input class="input" type="number" min="0" max="10" step="1" value="0">
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="dropdown__item">
+              <p class="dropdown__item-title">кровати</p>
+              <div class="dropdown__input-control">
+                <button class="minus" disabled>-</button>
+                <input class="input" type="number" min="0" max="10" step="1" value="0">
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="dropdown__item">
+              <p class="dropdown__item-title">ванные комнаты</p>
+              <div class="dropdown__input-control">
+                <button class="minus" disabled>-</button>
+                <input class="input" type="number" min="0" max="10" step="1" value="0">
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+            </div>
           </div>
         </div>
       </div>

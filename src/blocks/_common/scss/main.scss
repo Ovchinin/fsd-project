@@ -11,13 +11,14 @@
 @import '../../button/button.scss';
 @import '../../range-slider/range-slider.scss';
 @import '../../pagination/pagination.scss';
+@import '../../dropdown/dropdown.scss';
 
 body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    // line-height: 24px;
     color: $darkShade75;
 }
 

@@ -3,25 +3,25 @@ mixin button(style, text, icon=false)
     case styleBtn 
         when 'full'
             if icon
-                a.button-full=text 
+                a(class="button-full")&attributes(attributes)=text 
                     i.button__icon='arrow_forward'
             else 
-                a.button-full=text
+                a(class="button-full")&attributes(attributes)=text 
         when 'border'
             if icon
-                a.button-border=text 
+                a(class="button-border")&attributes(attributes)=text 
                     i.button__icon='arrow_forward'
             else 
-                a.button-border=text
+                a(class="button-border")&attributes(attributes)=text 
         when 'link'
             if icon
-                a.button-link=text 
+                a(class="button-link")&attributes(attributes)=text 
                     i.button__icon='arrow_forward'
             else 
-                a.button-link=text
+                a(class="button-link")&attributes(attributes)=text 
         when '100%'
             if icon
-                a.button-100=text 
+                a(class="button-100")&attributes(attributes)=text 
                     i.button__icon='arrow_forward'
             else 
-                a.button-100=text        
+                a(class="button-100")&attributes(attributes)=text         
