@@ -1,0 +1,26 @@
+@import '../_common/scss/vars.scss';
+
+.bullet-list__items {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkShade75;
+}
+
+.bullet-list__item {
+    position: relative;
+    padding-left: 20px;
+}
+
+.bullet-list__item::before {
+    position:absolute;
+    left: 0;
+    top: 7px;
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $darkShade25;
+}

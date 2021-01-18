@@ -1,0 +1,19 @@
+include ../checkbox/checkbox.pug
+
+mixin checkbox-list(options)
+    if options.icon
+        .checkbox-list(class='checkbox-list--'+options.type)
+            .checkbox-list__header
+                h3.checkbox-list__title=options.title
+                i.checkbox-list__icon='expand_more'
+            .checkbox-list__items
+                +checkbox(options.items)
+    else 
+        .checkbox-list(class='checkbox-list--'+options.type)
+            .checkbox-list__header
+                h3.checkbox-list__title=options.title
+            .checkbox-list__items
+                +checkbox(options.items)
+
+    
+    

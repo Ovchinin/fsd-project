@@ -1,0 +1,38 @@
+@import '../_common/scss/vars.scss';
+@import '../checkbox/checkbox.scss';
+
+.checkbox-list {
+    width: 266px;
+}
+
+.checkbox-list__header.show ~ .checkbox-list__items {
+    max-height: 100vh;
+}
+
+.checkbox-list--dropwown .checkbox-list__items {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.checkbox-list__header {
+    position: relative;
+    padding: 12px 0;
+}
+
+.checkbox-list__header.show .checkbox-list__icon {
+    transform: rotate(180deg);
+}
+
+.checkbox-list__icon {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    text-transform: none;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: $darkShade50;
+    transition: all .3s;
+}

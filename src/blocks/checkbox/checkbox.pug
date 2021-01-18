@@ -1,6 +1,11 @@
-mixin checkbox(name, options)
-  .checkbox
-    each option, index in options
-      .checkbox__item
-        input.checkbox__input(type="checkbox" id="checkbox-"+index value=option.value name=name)
-        label.checkbox__label(for="checkbox-"+index) #{option.name}
+mixin checkbox(options)
+  each option in options
+    .checkbox
+      if option.title
+        input.checkbox__input(type="checkbox" id=option.id)
+        label.checkbox__label(for=option.id) 
+          .checkbox__title=option.title
+          .checkbox__desc=option.name
+      else 
+        input.checkbox__input(type="checkbox" id=option.id)
+        label.checkbox__label(for=option.id) #{option.name}

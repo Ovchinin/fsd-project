@@ -19,9 +19,13 @@ block main
             ])
             br
 
-            +checkbox('check', [
-                {name: 'Cream', value: '1'}, 
-                {name: 'Cheese', value: '2'}, 
+            +checkbox([
+                {name: 'Cream', id: 'Cream'}, 
+                {name: 'Cheese', id: 'Cheese'} 
+            ])
+            +checkbox([
+                {name: 'Cream', id: 'Cream2'}, 
+                {name: 'Cheese', id: 'Cheese2'} 
             ])
             br
 
@@ -55,3 +59,41 @@ block main
             br
             +dropdown-list('Гости', 'guest', 'Сколько гостей', ['взрослые', 'дети', 'младенцы'])
             +dropdown-list('Удобства', 'facilities', 'Удобства', ['спальни', 'кровати', 'ванные комнаты'])
+            br
+            +checkbox-list({
+                title:  'checkbox button',
+                type:   'standart',
+                icon:   false,
+                items:  [
+                            {name: 'Можно курить', id: 'id-1'}, 
+                            {name: 'Можно с питомцами', id: 'id-2'},
+                            {name: 'Можно пригласить гостей (до 10 человек)', id: 'id-3'}
+                        ]
+            })
+            +checkbox-list({
+                title:  'expandable checkbox list',
+                type:   'dropwown',
+                icon:   true,
+                items:  [
+                            {name: 'Завтрак', id: 'id-4'}, 
+                            {name: 'Письменный стол', id: 'id-5'}, 
+                            {name: 'Стул для кормления', id: 'id-6'}, 
+                            {name: 'Кроватка', id: 'id-7'}, 
+                            {name: 'Телевизор', id: 'id-8'}, 
+                            {name: 'Шампунь', id: 'id-9'}, 
+                        ]
+            })
+            +checkbox-list({
+                title:  'rich checkbox button',
+                type:   'standart',
+                icon:   false,
+                items:  [
+                            {title: 'Широкий коридор', name: 'Ширина коридоров в номере не менее 91 см.', id: 'id-10'}, 
+                            {title: 'Помощник для инвалидов', name: 'На 1 этаже вас встретит специалист  и проводит до номера.', id: 'id-11'}
+                        ]
+            })
+            br
+            +bullet-list({
+                title: 'bullet list',
+                items: ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'],
+            })
