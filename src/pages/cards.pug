@@ -1,0 +1,10 @@
+extends ../templates/main.pug
+include ../bundles/index.bundle.pug
+
+block variable
+    - var title = 'Home page';
+
+block main
+    section
+        .container
+            +text-field('Text Field', 'name label', 'Email') 

@@ -97,3 +97,14 @@ block main
                 title: 'bullet list',
                 items: ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'],
             })
+            br
+            +dropdown-calendar({
+                items: [
+                    {label: 'Прибытие', id: 'start', class: 'date-start'}, 
+                    {label: 'Выезд', id: 'end', class: 'date-end'}
+                ],
+            })
+            br
+            hr
+            br
+            //+dropdown-calendar()

@@ -30,14 +30,20 @@
           </div>
         </div><br>
         <div class="checkbox">
-          <div class="checkbox__item">
-            <input class="checkbox__input" type="checkbox" id="checkbox-0" value="1" name="check">
-            <label class="checkbox__label" for="checkbox-0">Cream</label>
-          </div>
-          <div class="checkbox__item">
-            <input class="checkbox__input" type="checkbox" id="checkbox-1" value="2" name="check">
-            <label class="checkbox__label" for="checkbox-1">Cheese</label>
-          </div>
+          <input class="checkbox__input" type="checkbox" id="Cream">
+          <label class="checkbox__label" for="Cream">Cream</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" id="Cheese">
+          <label class="checkbox__label" for="Cheese">Cheese</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" id="Cream2">
+          <label class="checkbox__label" for="Cream2">Cream</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" id="Cheese2">
+          <label class="checkbox__label" for="Cheese2">Cheese</label>
         </div><br>
         <div class="like-button"><i class="material-icons like-button__icon">favorite_border</i>
           <input class="like-button__input" type="number" id="like" name="like" value="5">
@@ -133,7 +139,98 @@
             <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
             </div>
           </div>
+        </div><br>
+        <div class="checkbox-list checkbox-list--standart">
+          <div class="checkbox-list__header">
+            <h3 class="checkbox-list__title">checkbox button</h3>
+          </div>
+          <div class="checkbox-list__items">
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-1">
+              <label class="checkbox__label" for="id-1">Можно курить</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-2">
+              <label class="checkbox__label" for="id-2">Можно с питомцами</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-3">
+              <label class="checkbox__label" for="id-3">Можно пригласить гостей (до 10 человек)</label>
+            </div>
+          </div>
         </div>
+        <div class="checkbox-list checkbox-list--dropwown">
+          <div class="checkbox-list__header">
+            <h3 class="checkbox-list__title">expandable checkbox list</h3><i class="checkbox-list__icon">expand_more</i>
+          </div>
+          <div class="checkbox-list__items">
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-4">
+              <label class="checkbox__label" for="id-4">Завтрак</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-5">
+              <label class="checkbox__label" for="id-5">Письменный стол</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-6">
+              <label class="checkbox__label" for="id-6">Стул для кормления</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-7">
+              <label class="checkbox__label" for="id-7">Кроватка</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-8">
+              <label class="checkbox__label" for="id-8">Телевизор</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-9">
+              <label class="checkbox__label" for="id-9">Шампунь</label>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-list checkbox-list--standart">
+          <div class="checkbox-list__header">
+            <h3 class="checkbox-list__title">rich checkbox button</h3>
+          </div>
+          <div class="checkbox-list__items">
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-10">
+              <label class="checkbox__label" for="id-10"> 
+                <div class="checkbox__title">Широкий коридор</div>
+                <div class="checkbox__desc">Ширина коридоров в номере не менее 91 см.</div>
+              </label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-11">
+              <label class="checkbox__label" for="id-11"> 
+                <div class="checkbox__title">Помощник для инвалидов</div>
+                <div class="checkbox__desc">На 1 этаже вас встретит специалист  и проводит до номера.</div>
+              </label>
+            </div>
+          </div>
+        </div><br>
+        <div class="bullet-list">
+          <h3 class="bullet-list__title">bullet list</h3>
+          <ul class="bullet-list__items">
+            <li class="bullet-list__item">Нельзя с питомцами</li>
+            <li class="bullet-list__item">Без вечеринок и мероприятий</li>
+            <li class="bullet-list__item">Время прибытия — после 13:00, а выезд до 12:00</li>
+          </ul>
+        </div><br>
+        <div class="dropdown-calendar">
+          <div class="dropdown-calendar__item">
+            <label class="dropdown-calendar__label h3" for="start">Прибытие</label>
+            <input class="date-start" type="text" id="start" placeholder="ДД.ММ.ГГГГ"><i class="dropdown-calendar__icon">expand_more</i>
+          </div>
+          <div class="dropdown-calendar__item">
+            <label class="dropdown-calendar__label h3" for="end">Выезд</label>
+            <input class="date-end" type="text" id="end" placeholder="ДД.ММ.ГГГГ"><i class="dropdown-calendar__icon">expand_more</i>
+          </div>
+        </div><br>
+        <hr><br>
+        <!--+dropdown-calendar()-->
       </div>
     </section>
 <footer>

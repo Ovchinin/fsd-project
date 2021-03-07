@@ -1,0 +1,207 @@
+@import '~air-datepicker/dist/css/datepicker.css';
+@import '../_common/scss/vars.scss';
+
+.dropdown-calendar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-calendar__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 14px;
+    color: $darkShade75;
+}
+
+.date-end, .date-start {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 14px;
+    color: $darkShade75;
+    width: 150px;
+    height: 44px;
+    padding-left: 14px;
+    border: 1px solid $darkShade25;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.date-start::placeholder,
+.date-end::placeholder {
+    color: $darkShade75;
+}
+
+.dropdown-calendar__icon {
+    position: absolute;
+    top: 27px;
+    right: 10px;
+    text-transform: none;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    // line-height: 24px;
+    color: $darkShade50;
+}
+
+.datepicker--cell.datepicker--cell-day.-current- {
+    width: 40px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: $greenGradient;
+    border-radius: 22px;
+}
+
+.datepicker--cell.datepicker--cell-day {
+    width: 40px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.datepicker--cell.datepicker--cell-day.-range-from-.-selected-,
+.datepicker--cell.datepicker--cell-day.-range-to-.-selected- {
+    width: 40px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: $purpleGradient;
+    border-radius: 22px;
+}
+
+.datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after { 
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    width: 20px;
+    height: 40px;
+    top: 0;
+    left: 20px;
+    background: linear-gradient(180deg, rgba(188,156,255,0.25) 0%, rgba(139,164,249,0.25) 100%);
+}
+
+.datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before { 
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    width: 20px;
+    height: 40px;
+    top: 0;
+    right: 20px;
+    background: linear-gradient(180deg, rgba(188,156,255,0.25) 0%, rgba(139,164,249,0.25) 100%);
+}
+
+.datepicker--cell.datepicker--cell-day.-range-to-.-focus-,
+.datepicker--cell.datepicker--cell-day.-in-range- {
+    background: linear-gradient(180deg, rgba(188,156,255,0.25) 0%, rgba(139,164,249,0.25) 100%);
+}
+
+.datepicker--cell.datepicker--cell-day.-focus- {
+    background: $purpleGradient;
+    border-radius: 22px;
+    color: #FFFFFF;
+}
+
+.datepicker {
+    width: 320px;
+    height: 369px;
+}
+
+.datepicker--nav-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    color: #1F2041;
+}
+
+.datepicker--nav-action .material-icons {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $purple;
+}
+
+.datepicker--days-names {
+    width: 280px;
+    margin: 0 auto;
+}
+.datepicker--day-name {
+    font-family: 'Montserrat';
+    width: 40px;
+    height: 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #BC9CFF;
+}
+
+.datepicker--nav {
+    width: 280px;
+    height: 24px;
+    margin: 20px auto;
+    border-bottom: none;
+}
+
+.datepicker--cells.datepicker--cells-days {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.datepicker--buttons {
+    width: 280px;
+    margin: 20px;
+    padding: 0;
+    justify-content: space-between;
+    border-top: none;
+}
+
+.datepicker--button {
+    flex: 0;
+}
+
+.datepicker--button:hover {
+    background: transparent;
+}
+
+// .datepicker--pointer {
+//     display: none;
+// }

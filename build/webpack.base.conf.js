@@ -109,6 +109,12 @@ module.exports = {
             inject: true,
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/cards.pug',
+            filename: 'cards.html',
+            inject: true,
+            minify: false
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 { from: './src/blocks/_common/fonts/', to: './fonts' }
