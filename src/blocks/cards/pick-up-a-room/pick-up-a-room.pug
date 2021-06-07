@@ -1,0 +1,14 @@
+include ../../../bundles/form-element.bundle.pug
+
+mixin pick-up-a-room(option)
+    .pick-up-a-room
+        .pick-up-a-room__title.h1=option.title
+        +dropdown-calendar({
+            items: [
+                {label: 'Прибытие', id: 'start-date-search', class: 'date-start', icon: true}, 
+                {label: 'Выезд', id: 'end-date-search', class: 'date-end', icon: true}
+            ],
+        })(class="pick-up-a-room__calendar")
+        +dropdown-list('Гости', 'guest', 'Сколько гостей', ['взрослые', 'дети', 'младенцы'])(class="pick-up-a-room__dropdown")
+        +button('100%', 'подобрать номер', true)(class="pick-up-a-room__button")
+

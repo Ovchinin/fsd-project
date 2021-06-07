@@ -1,5 +1,5 @@
 extends ../templates/main.pug
-include ../bundles/index.bundle.pug
+include ../bundles/form-element.bundle.pug
 
 block variable
     - var title = 'Home page';
@@ -7,16 +7,23 @@ block variable
 block main
     section
         .container
-            +text-field('Text Field', 'name label', 'Email') 
+            +text-field({
+                type: 'text',
+                text: 'Text Field', 
+                name: 'name label', 
+                placeholder: 'Email',
+            }) 
             br
 
             +toggle('Получать спецпредложения', 'toggle')
             br
 
-            +radio-buttons('Ben', [
-                {name: 'Cream', value: '1'}, 
-                {name: 'Cheese', value: '2'}, 
-            ])
+            +radio-buttons({
+                items: [
+                    {label: 'Cream', id: 'Cream', value: 'Cream', name: 'order'}, 
+                    {label: 'Cheese', id: 'Cheese', value: 'Cheese', name: 'order'}, 
+                ],
+            })
             br
 
             +checkbox([
@@ -100,11 +107,21 @@ block main
             br
             +dropdown-calendar({
                 items: [
-                    {label: 'Прибытие', id: 'start', class: 'date-start'}, 
-                    {label: 'Выезд', id: 'end', class: 'date-end'}
+                    {label: 'Прибытие', id: 'start', class: 'date-start', icon: true}, 
+                    {label: 'Выезд', id: 'end', class: 'date-end', icon: true}
                 ],
             })
             br
-            hr
             br
-            //+dropdown-calendar()
+            +advantages({
+                items: [
+                    {icon: 'insert_emoticon', title: 'Комфорт', descr: 'Шумопоглощающие стены'},
+                    {icon: 'location_city', title: 'Удобство', descr: 'Окно в каждой из спален'},
+                ]
+            })
+            br
+            +reviews({
+                items: [
+                    {photo: '/images/review/image.png', name: 'Мурад Сарафанов', date: '5 дней назад', review: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', likes: '12'},
+                ]
+            })

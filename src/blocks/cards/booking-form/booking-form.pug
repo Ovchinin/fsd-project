@@ -1,0 +1,66 @@
+include ../../../bundles/form-element.bundle.pug
+
+mixin booking-form()
+    .booking-form
+        .booking-form__header
+            .booking-form__number-group
+                span.booking-form__number='№'
+                span.booking-form__number-item='888'
+                span.booking-form__number-category='люкс'
+            .booking-form__number-price-group
+                span.booking-form__number-price='9 990'
+                span.booking-form__number-currency-type='₽'
+                span.booking-form__number-per-day='в сутки'
+                
+        +dropdown-calendar({
+            items: [
+                {label: 'Прибытие', id: 'start-booking', class: 'date-start', icon: true}, 
+                {label: 'Выезд', id: 'end-booking', class: 'date-end', icon: true}
+            ],
+        })(class="booking-form__calendar")
+
+        +dropdown-list('Гости', 'guest', 'Сколько гостей', ['взрослые', 'дети', 'младенцы'])(class="booking-form__guest")
+        .booking-form__calculator
+            .booking-form__room-price-group
+                .booking-form__left-group
+                    .booking-form__room-price
+                        span.booking-form__price='9 990'
+                        span.booking-form__currency-type='₽'                
+                        span.booking-form__separator='х'               
+                    .booking-form__days
+                        .booking-form__days='4'
+                        .booking-form__days-label='суток'                      
+                .booking-form__preliminary-price
+                    span.booking-form__price='39 960'
+                    span.booking-form__currency-type='₽'
+
+            .booking-form__service-fee-group
+                .booking-form__left-group
+                    span.booking-form__service-fee-description='Сбор за услуги: '
+                    .booking-form__service-fee-info
+                        span.booking-form__service-fee-info-type='скидка '
+                        span.booking-form__service-fee-info-price='39 960'
+                        span.booking-form__service-fee-info-currency-type='₽'
+                        i.material-icons.booking-form__info-icon='error_outline'
+                
+                .booking-form__preliminary-price
+                    span.booking-form__price='0'
+                    span.booking-form__currency-type='₽'
+
+            .booking-form__extra-charges-group
+                .booking-form__left-group
+                    .booking-form__extra-charges-description='Сбор за дополнительные услуги'
+                    i.material-icons.booking-form__info-icon='error_outline'
+
+                .booking-form__preliminary-price
+                    span.booking-form__price='0'
+                    span.booking-form__currency-type='₽'
+            
+            .booking-form__total-price-group
+                .booking-form__total-price-info='Итого'
+                .booking-form__total-price-separator
+                .booking-form__total-price
+                    span.booking-form__total-price-value='38 081'
+                    span.booking-form__total-price-currency-type='₽'
+
+        +button('100%', 'забронировать', true)(class="booking-form__button")

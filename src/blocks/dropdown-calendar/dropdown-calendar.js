@@ -13,25 +13,42 @@ $(() => {
         let elem = $(this);
         let start = elem.find(model.startElem);
         let end = elem.find(model.endElem);
+        let userMinDate = start.data('user-min-date');
 
-        start.datepicker({
-            range: true,
-            minDate: new Date(),
-            clearButton: true,
-            navTitles: {
-                days: 'MM yyyy',
-            },
-            $body: '.dropdown-calendar',
-            prevHtml: '<i class="material-icons">arrow_back</i>',
-            nextHtml: '<i class="material-icons">arrow_forward</i>',
-            multipleDatesSeparator: ' - ',
-            onSelect: function (date) {
-                const dates = date.split(' - ');
-                $(start).val(dates[0]);
-                $(end).val(dates[1]);
-            },
-            //inline: true,
-        });
+        if (userMinDate) {
+            start.datepicker({
+                minDate: new Date(),
+                clearButton: true,
+                navTitles: {
+                    days: 'MM yyyy',
+                },
+                prevHtml: '<i class="material-icons">arrow_back</i>',
+                nextHtml: '<i class="material-icons">arrow_forward</i>',
+                multipleDatesSeparator: ' - ',
+                onSelect: function (date) {
+                    const dates = date.split(' - ');
+                    $(start).val(dates[0]);
+                    $(end).val(dates[1]);
+                },
+            });
+        } else {
+            start.datepicker({
+                clearButton: true,
+                navTitles: {
+                    days: 'MM yyyy',
+                },
+                $body: '.dropdown-calendar',
+                prevHtml: '<i class="material-icons">arrow_back</i>',
+                nextHtml: '<i class="material-icons">arrow_forward</i>',
+                multipleDatesSeparator: ' - ',
+                onSelect: function (date) {
+                    const dates = date.split(' - ');
+                    $(start).val(dates[0]);
+                    $(end).val(dates[1]);
+                },
+            });
+        }
+
 
         elem.find(end).click(function () {
             $(start).data('datepicker').show();

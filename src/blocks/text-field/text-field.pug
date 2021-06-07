@@ -1,4 +1,19 @@
-mixin text-field(text, name, placeholder)
-  .text-field
-    label(for=name).text-field__label=text
-    input(type="text" id=name name=name placeholder=placeholder).text-field__input
+mixin text-field(option)
+  div(class="text-field")&attributes(attributes)
+  
+    if(option.icon)
+
+      if(option.text)
+        label(for=option.name).text-field__label=option.text
+        input(type=option.type pattern=option.pattern id=option.name name=option.name placeholder=option.placeholder).text-field__input
+        i.input__icon='arrow_forward'
+      else 
+        input(type=option.type pattern=option.pattern id=option.name name=option.name placeholder=option.placeholder).text-field__input
+        i.input__icon='arrow_forward'
+
+    else
+      if(option.text)
+        label(for=option.name).text-field__label=option.text
+        input(type=option.type pattern=option.pattern id=option.name name=option.name placeholder=option.placeholder).text-field__input
+      else 
+        input(type=option.type pattern=option.pattern id=option.name name=option.name placeholder=option.placeholder).text-field__input

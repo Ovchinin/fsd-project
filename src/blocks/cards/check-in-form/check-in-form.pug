@@ -1,0 +1,52 @@
+include ../../../bundles/form-element.bundle.pug
+
+mixin check-in-form(option)
+    .check-in-form
+        .check-in-form__title.h1=option.title
+
+        +text-field({
+            type: 'text',
+            name: 'Name', 
+            placeholder: 'Имя',
+        })(class="check-in-form__input")
+
+        +text-field({
+            type: 'text',
+            name: 'Surname', 
+            placeholder: 'Фамилия',
+        })(class="check-in-form__input")
+
+        +radio-buttons({
+            items: [
+                {label: 'Мужчина', id: 'man', value: 'man', name: 'sex'}, 
+                {label: 'Женщина', id: 'woman', value: 'woman', name: 'sex'}, 
+            ],
+        })(class="check-in-form__sex")
+
+        +dropdown-calendar({
+            items: [
+                {label: 'дата рождения', id: 'start2', class: 'date-start'}, 
+            ],
+        })(class="check-in-form__calendar")
+
+        +text-field({
+            text: 'данные для входа в сервис',
+            type: 'email',
+            pattern:".+@globex.com",
+            name: 'email-1', 
+            placeholder: 'Email',
+        })(class="check-in-form__input")
+
+        +text-field({
+            type: 'password',
+            name: 'password-1', 
+            placeholder: 'Пароль',
+        })(class="check-in-form__input")
+
+        +toggle('Получать спецпредложения', 'toggle')(class="check-in-form__toggle")
+
+        +button('100%', 'подобрать номер', true)(class="check-in-form__button")
+
+        .check-in-form__login
+            p.check-in-form__login-text='Уже есть аккаунт на Toxin'
+            +button('border', 'войти')(class="check-in-form__login-btn")

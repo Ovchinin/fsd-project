@@ -1,0 +1,8 @@
+@import '../../../blocks/_common/scss/vars.scss';
+
+.footer__top .container,
+.copyright-bar .container {
+    width: 720px;
+    margin: 0 auto;
+    display: flex;
+}

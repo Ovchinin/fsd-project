@@ -1,0 +1,14 @@
+include ../like-button/like-button.pug
+
+mixin reviews(options)
+    .reviews
+        each item in options.items
+            .reviews__item
+                .reviews__left-block
+                    img.reviews__photo(src=item.photo, alt="")
+                    .reviews__like
+                        +like-button('like', item.likes)
+                .reviews__right-block
+                    .reviews__name=item.name
+                    .reviews__date=item.date
+                    .reviews__review=item.review

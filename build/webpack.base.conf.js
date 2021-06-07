@@ -84,17 +84,19 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpg|gif|svg)$/,
+                test: /\.(png|jpg|gif)$/,
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]',
+                    outputPath: './images/'
                 },
             },
             {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[ext]'
+                    name: '[name].[ext]',
+                    outputPath: './fonts/'
                 }
             },
         ]
@@ -115,9 +117,18 @@ module.exports = {
             inject: true,
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/headersAndFooters.pug',
+            filename: 'headersAndFooters.html',
+            inject: true,
+            minify: false
+        }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: './src/blocks/_common/fonts/', to: './fonts' }
+                { from: './src/blocks/_common/fonts/', to: './fonts' },
+                { from: './src/blocks/cards/room-preview/image/', to: './images/slider/' },
+                { from: './src/blocks/reviews/img/', to: './images/review/' },
+                { from: './src/blocks/headersAndFooters/logo-img/', to: './images/logo/' },
             ]
         }),
     ]

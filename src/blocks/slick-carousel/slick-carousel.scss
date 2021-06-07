@@ -1,0 +1,83 @@
+@import '~slick-carousel/slick/slick-theme.css';
+@import '~slick-carousel/slick/slick.css';
+
+.slide-prev, .slide-next {
+    position: absolute;
+    top: 40%;
+    display: none !important;
+    cursor: pointer;
+    color: #fff;
+    z-index: 999;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.slide-prev {
+    left: 0;
+    transform: rotate(90deg);
+}
+
+.slide-next {
+    right: 0;
+    transform: rotate(-90deg);
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+}
+.slider-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0;
+    cursor: pointer;
+}
+.slider-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+// .slick-dots li button:hover,
+// .slick-dots li button:focus
+// {
+//     outline: none;
+// }
+.slider-dots li button:hover:before,
+.slider-dots li button:focus:before
+{
+    background: #fff;
+}
+.slider-dots li button:before {
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    width: 7.5px;
+    height: 7.49px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #fff;
+}
+.slider-dots li.slick-active button:before
+{
+    background: #fff;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+

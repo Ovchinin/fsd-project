@@ -1,0 +1,24 @@
+include ../../../bundles/form-element.bundle.pug
+
+mixin authorization-form(option)
+    .authorization-form
+        .authorization-form__title.h1=option.title
+
+        +text-field({
+            type: 'email',
+            pattern:".+@globex.com",
+            name: 'email', 
+            placeholder: 'Email',
+        })(class="authorization-form__input")
+
+        +text-field({
+            type: 'password',
+            name: 'password', 
+            placeholder: 'Пароль',
+        })(class="authorization-form__input")
+
+        +button('100%', 'подобрать номер', true)(class="authorization-form__button")
+
+        .authorization-form__login
+            p.authorization-form__login-text='Нет аккаунта на Toxin?'
+            +button('border', 'создать')(class="authorization-form__login-btn")

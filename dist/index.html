@@ -6,9 +6,18 @@
     <title>Home page</title>
   <link href="/vendors.css" rel="stylesheet"><link href="/app.css" rel="stylesheet"></head>
   <body>
-<header>
-  <div class="container"><span>header is here</span></div>
-</header>
+    <header>
+      <div class="container">
+        <div class="nav-bar">
+          <div class="logo-group"><img class="logo-img" src="./images/logo/logo.png"><img class="logo-text" src="./images/logo/TOXIN.svg"></div>
+              <div class="nav main-menu"></div>
+        </div>
+        <div class="nav-bar--authorization">
+          <div class="logo-group"><img class="logo-img" src="./images/logo/logo.png"><img class="logo-text" src="./images/logo/TOXIN.svg"></div>
+              <div class="nav second-menu"></div>
+        </div>
+      </div>
+    </header>
     <section>
       <div class="container">
         <div class="text-field">
@@ -21,12 +30,12 @@
         </div><br>
         <div class="radio-buttons">
           <div class="radio-buttons__item">
-            <input class="radio-buttons__input" type="radio" id="radio-buttons-0" value="1" name="Ben">
-            <label class="radio-buttons__label" for="radio-buttons-0">Cream</label>
+            <input class="radio-buttons__input" type="radio" id="Cream" value="Cream" name="order">
+            <label class="radio-buttons__label" for="Cream">Cream</label>
           </div>
           <div class="radio-buttons__item">
-            <input class="radio-buttons__input" type="radio" id="radio-buttons-1" value="2" name="Ben">
-            <label class="radio-buttons__label" for="radio-buttons-1">Cheese</label>
+            <input class="radio-buttons__input" type="radio" id="Cheese" value="Cheese" name="order">
+            <label class="radio-buttons__label" for="Cheese">Cheese</label>
           </div>
         </div><br>
         <div class="checkbox">
@@ -72,71 +81,75 @@
         <div class="pagination">
           <div class="pagination__info"></div>
         </div><br>
-        <h3 class="dropdown-title">Гости</h3>
-        <div class="dropdown-list dropdown--guest">
-          <div class="dropdown__header">
-            <div class="dropdown__header-value" data-title="Сколько гостей">Сколько гостей</div><i class="dropdown__icon">expand_more</i>
-          </div>
-          <div class="dropdown__list-items">
-            <div class="dropdown__item">
-              <p class="dropdown__item-title">взрослые</p>
-              <div class="dropdown__input-control">
-                <button class="minus" disabled>-</button>
-                <input class="input" type="number" min="0" max="10" step="1" value="0">
-                <button class="plus">+</button>
-              </div>
+        <div class="dropdown">
+          <h3 class="dropdown-title">Гости</h3>
+          <div class="dropdown-list dropdown--guest">
+            <div class="dropdown__header">
+              <div class="dropdown__header-value" data-title="Сколько гостей">Сколько гостей</div><i class="dropdown__icon">expand_more</i>
             </div>
-            <div class="dropdown__item">
-              <p class="dropdown__item-title">дети</p>
-              <div class="dropdown__input-control">
-                <button class="minus" disabled>-</button>
-                <input class="input" type="number" min="0" max="10" step="1" value="0">
-                <button class="plus">+</button>
+            <div class="dropdown__list-items">
+              <div class="dropdown__item">
+                <p class="dropdown__item-title">взрослые</p>
+                <div class="dropdown__input-control">
+                  <button class="minus" disabled>-</button>
+                  <input class="input" type="number" min="0" max="10" step="1" value="0">
+                  <button class="plus">+</button>
+                </div>
               </div>
-            </div>
-            <div class="dropdown__item">
-              <p class="dropdown__item-title">младенцы</p>
-              <div class="dropdown__input-control">
-                <button class="minus" disabled>-</button>
-                <input class="input" type="number" min="0" max="10" step="1" value="0">
-                <button class="plus">+</button>
+              <div class="dropdown__item">
+                <p class="dropdown__item-title">дети</p>
+                <div class="dropdown__input-control">
+                  <button class="minus" disabled>-</button>
+                  <input class="input" type="number" min="0" max="10" step="1" value="0">
+                  <button class="plus">+</button>
+                </div>
               </div>
-            </div>
-            <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+              <div class="dropdown__item">
+                <p class="dropdown__item-title">младенцы</p>
+                <div class="dropdown__input-control">
+                  <button class="minus" disabled>-</button>
+                  <input class="input" type="number" min="0" max="10" step="1" value="0">
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+              </div>
             </div>
           </div>
         </div>
-        <h3 class="dropdown-title">Удобства</h3>
-        <div class="dropdown-list dropdown--facilities">
-          <div class="dropdown__header">
-            <div class="dropdown__header-value" data-title="Удобства">Удобства</div><i class="dropdown__icon">expand_more</i>
-          </div>
-          <div class="dropdown__list-items">
-            <div class="dropdown__item">
-              <p class="dropdown__item-title">спальни</p>
-              <div class="dropdown__input-control">
-                <button class="minus" disabled>-</button>
-                <input class="input" type="number" min="0" max="10" step="1" value="0">
-                <button class="plus">+</button>
-              </div>
+        <div class="dropdown">
+          <h3 class="dropdown-title">Удобства</h3>
+          <div class="dropdown-list dropdown--facilities">
+            <div class="dropdown__header">
+              <div class="dropdown__header-value" data-title="Удобства">Удобства</div><i class="dropdown__icon">expand_more</i>
             </div>
-            <div class="dropdown__item">
-              <p class="dropdown__item-title">кровати</p>
-              <div class="dropdown__input-control">
-                <button class="minus" disabled>-</button>
-                <input class="input" type="number" min="0" max="10" step="1" value="0">
-                <button class="plus">+</button>
+            <div class="dropdown__list-items">
+              <div class="dropdown__item">
+                <p class="dropdown__item-title">спальни</p>
+                <div class="dropdown__input-control">
+                  <button class="minus" disabled>-</button>
+                  <input class="input" type="number" min="0" max="10" step="1" value="0">
+                  <button class="plus">+</button>
+                </div>
               </div>
-            </div>
-            <div class="dropdown__item">
-              <p class="dropdown__item-title">ванные комнаты</p>
-              <div class="dropdown__input-control">
-                <button class="minus" disabled>-</button>
-                <input class="input" type="number" min="0" max="10" step="1" value="0">
-                <button class="plus">+</button>
+              <div class="dropdown__item">
+                <p class="dropdown__item-title">кровати</p>
+                <div class="dropdown__input-control">
+                  <button class="minus" disabled>-</button>
+                  <input class="input" type="number" min="0" max="10" step="1" value="0">
+                  <button class="plus">+</button>
+                </div>
               </div>
-            </div>
-            <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+              <div class="dropdown__item">
+                <p class="dropdown__item-title">ванные комнаты</p>
+                <div class="dropdown__input-control">
+                  <button class="minus" disabled>-</button>
+                  <input class="input" type="number" min="0" max="10" step="1" value="0">
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+              </div>
             </div>
           </div>
         </div><br>
@@ -222,19 +235,68 @@
         <div class="dropdown-calendar">
           <div class="dropdown-calendar__item">
             <label class="dropdown-calendar__label h3" for="start">Прибытие</label>
-            <input class="date-start" type="text" id="start" placeholder="ДД.ММ.ГГГГ"><i class="dropdown-calendar__icon">expand_more</i>
+            <input class="date-start" type="text" id="start" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
           </div>
           <div class="dropdown-calendar__item">
             <label class="dropdown-calendar__label h3" for="end">Выезд</label>
-            <input class="date-end" type="text" id="end" placeholder="ДД.ММ.ГГГГ"><i class="dropdown-calendar__icon">expand_more</i>
+            <input class="date-end" type="text" id="end" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+          </div>
+        </div><br><br>
+        <div class="advantages">
+          <div class="advantages__item"><i class="advantages__icon">insert_emoticon</i>
+            <div class="advantages__info">
+              <div class="advantages__title">Комфорт</div>
+              <div class="advantages__descr">Шумопоглощающие стены</div>
+            </div>
+          </div>
+          <div class="advantages__item"><i class="advantages__icon">location_city</i>
+            <div class="advantages__info">
+              <div class="advantages__title">Удобство</div>
+              <div class="advantages__descr">Окно в каждой из спален</div>
+            </div>
           </div>
         </div><br>
-        <hr><br>
-        <!--+dropdown-calendar()-->
+        <div class="reviews">
+          <div class="reviews__item">
+            <div class="reviews__left-block"><img class="reviews__photo" src="/images/review/image.png" alt="">
+              <div class="reviews__like">
+                <div class="like-button"><i class="material-icons like-button__icon">favorite_border</i>
+                  <input class="like-button__input" type="number" id="like" name="like" value="12">
+                </div>
+              </div>
+            </div>
+            <div class="reviews__right-block">
+              <div class="reviews__name">Мурад Сарафанов</div>
+              <div class="reviews__date">5 дней назад</div>
+              <div class="reviews__review">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-<footer>
-  <div class="container"><span>footer is here</span></div>
-</footer>
+    <footer>
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__left-bar">
+            <div class="logo-group"><img class="logo-img" src="./images/logo/logo.png"><img class="logo-text" src="./images/logo/TOXIN.svg"></div>
+            <div class="footer__left-bar-info">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+          </div>
+              <div class="footer-menu"></div>
+          <div class="footer__right-bar">
+            <div class="footer__right-bar-title">Подписка</div>
+            <div class="footer__right-bar-info">Получайте специальные предложения и новости сервиса</div>
+                <div class="text-field">
+                  <input class="text-field__input" type="text" id="name label" name="name label" placeholder="Email"><i class="input__icon">arrow_forward</i>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-bar">
+        <div class="container">
+          <div class="info">Copyright © 2018 Toxin отель. Все права защищены.</div>
+          <div class="social-block"></div>
+        </div>
+      </div>
+    </footer>
   <script src="/vendors.js"></script><script src="/app.js"></script></body>
 </html>

@@ -39,10 +39,15 @@
 }
 
 .button-border {
+    border: double 2px transparent;
+
+    background-image: linear-gradient(white, white), $purpleGradient;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
     position: relative;
     display: inline-block;
     padding: 13px 18px;
-    background: $purpleGradient;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
@@ -52,24 +57,11 @@
     text-align: center;
     position: relative;
     color: $purple;
-    border: 2px solid transparent;
-    background: #fff;
-    background-clip: padding-box;
     border-radius: 22px;
     cursor: pointer;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        z-index: -1;
-        margin: -2px;
-        border-radius: inherit;
-        background: $purpleGradient;
-    }
-
-    &:hover::before{
-        opacity: 0.5;
+    &:hover {
+        background-image: linear-gradient(white, white), $purpleGradient25;
     }
 }
 

@@ -1,0 +1,8 @@
+mixin advantages(options)
+    .advantages
+        each item in options.items
+            .advantages__item
+                i.advantages__icon=item.icon
+                .advantages__info
+                    .advantages__title=item.title
+                    .advantages__descr=item.descr 

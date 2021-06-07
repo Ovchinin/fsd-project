@@ -1,0 +1,49 @@
+@import '../_common/scss/vars.scss';
+
+.menu__list {
+    display: flex;
+}
+
+.nav__list-item {
+    margin-right: 20px;
+}
+
+.nav__list-item--active .nav__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: $darkShade75;
+}
+
+.nav__list-item--sub-menu {
+    padding-right: 20px;
+    position: relative;
+}
+
+.nav__list-item--dropdwn-list-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: none;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: $darkShade50;
+    cursor: pointer;
+}
+
+.nav__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $darkShade50;
+}
+
+.nav__sub-menu-list {
+    display: none;
+}

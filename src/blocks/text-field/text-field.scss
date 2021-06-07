@@ -4,6 +4,7 @@
 
 .text-field {
   display: inline-block;
+  position: relative;
 }
 
 .text-field__label {
@@ -45,6 +46,21 @@
     font-size: 14px;
     line-height: 18px;
     color: $darkShade25;
+}
+
+.input__icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-transform: none;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    background: $purpleGradient;
+    background-clip: text;
+    color: transparent;
 }
   
 //------- end mixin text-field

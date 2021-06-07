@@ -1,0 +1,31 @@
+include ../../../bundles/form-element.bundle.pug
+
+mixin room-preview(images)
+    .room-preview
+        .room-preview__slider
+            +slick-carousel({
+                images: [
+                    {src: './images/slider/room1.jpg'},
+                    {src: './images/slider/room2.jpg'},
+                    {src: './images/slider/room1.jpg'},
+                    {src: './images/slider/room2.jpg'},
+                ]
+            })
+        
+        .room-preview__header
+            .room-preview__number-group
+                span.room-preview__number='№'
+                span.room-preview__number-item='888'
+                span.room-preview__number-category='люкс'
+            .room-preview__number-price-group
+                span.room-preview__number-price='9 990'
+                span.room-preview__number-currency-type='₽'
+                span.room-preview__number-per-day='в сутки'
+
+        .room-preview__rating-group
+            +star-rating(5, 5)
+            .room-preview__rating
+                span.room-preview__rating-count='145'
+                span.room-preview__rating-info='Отзывов'
+
+            

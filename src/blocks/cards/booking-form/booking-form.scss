@@ -1,0 +1,136 @@
+@import '../../_common/scss/vars.scss';
+
+.booking-form {
+    width: 380px;
+    box-sizing: border-box;
+    padding: 40px 30px 30px 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.booking-form__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.booking-form__number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: $darkShade100;
+    margin-right: 2px;
+}
+
+.booking-form__number-item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $darkShade100;
+}
+
+.booking-form__number-category {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $purple;
+}
+
+.booking-form__number-price,
+.booking-form__number-currency-type {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: $darkShade50;
+}
+
+.booking-form__number-per-day {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: $darkShade50;
+    margin-left: 5px;
+}
+
+.booking-form__calendar {
+    margin-bottom: 20px;
+}
+
+.booking-form__guest {
+    margin-bottom: 20px;
+}
+
+.booking-form__calculator {
+    margin-bottom: 20px;
+}
+
+.booking-form__room-price {
+    display: flex;
+    align-items: center;
+}
+
+.booking-form__days {
+    display: flex;
+    align-items: center;
+}
+
+.booking-form__preliminary-price {
+    display: flex;
+    align-items: center;
+}
+
+.booking-form__room-price-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-form__left-group {
+    display: flex;
+    align-items: center;
+}
+
+.booking-form__service-fee-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-form__extra-charges-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-form__total-price-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-form__total-price-separator {
+    border-bottom: 1px dashed $darkShade25;
+    flex-grow: 1;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.booking-form__info-icon {
+    color: $darkShade25;
+}
+
+.booking-form__service-fee-info {
+    display: flex;
+}

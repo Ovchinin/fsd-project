@@ -1,7 +1,19 @@
 mixin dropdown-calendar(option)
-    .dropdown-calendar
+    div(class="dropdown-calendar")&attributes(attributes)
         each item in option.items 
-            .dropdown-calendar__item
-                label(for=item.id class='dropdown-calendar__label h3') #{item.label}
-                input(type="text" id=item.id class=item.class placeholder='ДД.ММ.ГГГГ')
-                i.dropdown-calendar__icon='expand_more'
+            if item.icon
+                .dropdown-calendar__item
+                    label(for=item.id class='dropdown-calendar__label h3') #{item.label}
+                    input(
+                        type="text" 
+                        id=item.id 
+                        class=item.class 
+                        placeholder='ДД.ММ.ГГГГ' 
+                        data-range="true"
+                        data-user-min-date="true"
+                    )
+                    i.dropdown-calendar__icon='expand_more'
+            else 
+                .dropdown-calendar__item
+                    label(for=item.id class='dropdown-calendar__label h3') #{item.label}
+                    input(type="text" id=item.id class=item.class placeholder='ДД.ММ.ГГГГ')

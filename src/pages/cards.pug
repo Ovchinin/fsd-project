@@ -1,5 +1,5 @@
 extends ../templates/main.pug
-include ../bundles/index.bundle.pug
+include ../bundles/cards.bundle.pug
 
 block variable
     - var title = 'Home page';
@@ -7,4 +7,17 @@ block variable
 block main
     section
         .container
-            +text-field('Text Field', 'name label', 'Email') 
+            +pick-up-a-room({
+                title: 'Найдём номера под ваши пожелания',
+            })
+            +check-in-form({
+                title: 'Регистрация аккаунта',
+            })
+            +booking-form()
+            +authorization-form({
+                title: 'Войти',
+            })
+            +room-preview()
+
+
+

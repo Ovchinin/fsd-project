@@ -1,0 +1,27 @@
+@import '../_common/scss/vars.scss';
+
+.advantages__item {
+    display: flex;
+    align-items: center;
+}
+
+.advantages__icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 41px;
+    background: $purpleGradient;
+    background-clip: text;
+    color: transparent;
+}
+
+.advantages__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkShade75;
+}
+
