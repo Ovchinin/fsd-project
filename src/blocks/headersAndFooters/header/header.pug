@@ -1,19 +1,14 @@
 include ../../menu/menu.pug
+include ../../logo/logo.pug
 
 header
     .container
         .nav-bar
-            .logo-group
-                img(class="logo-img" src="./images/logo/logo.png")
-                img(class="logo-text" src="./images/logo/TOXIN.svg")
-            
+            +logo()
             +nav().main-menu
 
         .nav-bar--authorization
-            .logo-group
-                img(class="logo-img" src="./images/logo/logo.png")
-                img(class="logo-text" src="./images/logo/TOXIN.svg")
-            
+            +logo()
             +nav().second-menu
 
             

@@ -1,0 +1,5 @@
+mixin social-links(options)
+    div(class="social-links")&attributes(attributes)
+        each item in options.items
+            a.social-links__link(href=item.href)
+                i.fab(class=item.icon_class)

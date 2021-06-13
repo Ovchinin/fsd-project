@@ -1,4 +1,7 @@
 include ../../footer-menu/footer-menu.pug
+include ../../social-links/social-links.pug
+include ../../copyright/copyright.pug
+include ../../logo/logo.pug
 include ../../../bundles/form-element.bundle.pug
 
 footer
@@ -23,5 +26,24 @@ footer
                 }) 
     .copyright-bar
         .container
-            .info Copyright © 2018 Toxin отель. Все права защищены.
-            .social-block
+            +copyright()
+            +social-links({
+                items: [
+                    {href:"#", icon_class:"fa-twitter"},
+                    {href:"#", icon_class:"fa-facebook-square"}, 
+                    {href:"#", icon_class:"fa-instagram"}, 
+                ],
+            })
+
+
+    .footer-creative
+        .container
+            +logo()
+            +copyright()
+            +social-links({
+                items: [
+                    {href:"#", icon_class:"fa-twitter"},
+                    {href:"#", icon_class:"fa-facebook-square"}, 
+                    {href:"#", icon_class:"fa-instagram"}, 
+                ],
+            })

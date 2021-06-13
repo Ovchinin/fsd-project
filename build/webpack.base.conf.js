@@ -128,7 +128,7 @@ module.exports = {
                 { from: './src/blocks/_common/fonts/', to: './fonts' },
                 { from: './src/blocks/cards/room-preview/image/', to: './images/slider/' },
                 { from: './src/blocks/reviews/img/', to: './images/review/' },
-                { from: './src/blocks/headersAndFooters/logo-img/', to: './images/logo/' },
+                { from: './src/blocks/logo/logo-img/', to: './images/logo/' },
             ]
         }),
     ]
