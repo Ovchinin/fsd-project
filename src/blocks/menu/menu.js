@@ -1,46 +1,6 @@
 import './menu.scss'
 import json from '../headersAndFooters/header/main-menu.json'
 
-// let nav = [
-//     {
-//         label: "О нас",
-//         link: "#1",
-//     },
-//     {
-//         label: "Услуги",
-//         children: [
-//             {
-//                 label: "Услуга 1",
-//                 link: "#4",
-//             },
-//             {
-//                 label: "Услуга 2",
-//                 link: "#5",
-//             },
-//         ]
-//     },
-//     {
-//         label: "Вакансии",
-//         link: "#2",
-//     },
-//     {
-//         label: "Новости",
-//         link: "#3",
-//     },
-//     {
-//         label: "Соглашения",
-//         children: [
-//             {
-//                 label: "Соглашение 1",
-//                 link: "#6",
-//             },
-//             {
-//                 label: "Соглашение 2",
-//                 link: "#7",
-//             },
-//         ]
-//     },
-// ]
 let nav = json
 
 function drawMainMenu(element, object) {
@@ -85,4 +45,4 @@ function drawMainMenu(element, object) {
 }
 
 drawMainMenu(".main-menu", nav)
-drawMainMenu(".second-menu", nav)
+// drawMainMenu(".second-menu", nav)

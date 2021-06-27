@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+  <link href="/vendors.css" rel="stylesheet"><link href="/app.css" rel="stylesheet"></head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav-bar">
+              <div class="logo-group"><img class="logo-img" src="./images/logo/logo.png"><img class="logo-text" src="./images/logo/TOXIN.svg"></div>
+              <div class="nav main-menu"></div>
+        </div>
+      </div>
+    </header>
+    <section class="top-content">
+      <div class="container">
+        <form class="pick-up-a-room top-content__form">
+          <div class="pick-up-a-room__title h1">Найдём номера под ваши пожелания</div>
+          <div class="dropdown-calendar pick-up-a-room__calendar">
+            <div class="dropdown-calendar__item">
+              <label class="dropdown-calendar__label h3" for="start-date-search">Прибытие</label>
+              <input class="date-start" type="text" id="start-date-search" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+            </div>
+            <div class="dropdown-calendar__item">
+              <label class="dropdown-calendar__label h3" for="end-date-search">Выезд</label>
+              <input class="date-end" type="text" id="end-date-search" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+            </div>
+          </div>
+          <div class="dropdown pick-up-a-room__dropdown">
+            <h3 class="dropdown-title">Гости</h3>
+            <div class="dropdown-list dropdown--guest">
+              <div class="dropdown__header">
+                <div class="dropdown__header-value" data-title="Сколько гостей">Сколько гостей</div><i class="dropdown__icon">expand_more</i>
+              </div>
+              <div class="dropdown__list-items">
+                <div class="dropdown__item">
+                  <p class="dropdown__item-title">взрослые</p>
+                  <div class="dropdown__input-control">
+                    <button class="minus" disabled>-</button>
+                    <input class="input" type="number" min="0" max="10" step="1" value="0">
+                    <button class="plus">+</button>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <p class="dropdown__item-title">дети</p>
+                  <div class="dropdown__input-control">
+                    <button class="minus" disabled>-</button>
+                    <input class="input" type="number" min="0" max="10" step="1" value="0">
+                    <button class="plus">+</button>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <p class="dropdown__item-title">младенцы</p>
+                  <div class="dropdown__input-control">
+                    <button class="minus" disabled>-</button>
+                    <input class="input" type="number" min="0" max="10" step="1" value="0">
+                    <button class="plus">+</button>
+                  </div>
+                </div>
+                <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+                </div>
+              </div>
+            </div>
+          </div><a class="button-100 pick-up-a-room__button">подобрать номер<i class="button__icon">arrow_forward</i></a>
+        </form>
+        <div class="top-content__info">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__left-bar">
+            <div class="logo-group"><img class="logo-img" src="./images/logo/logo.png"><img class="logo-text" src="./images/logo/TOXIN.svg"></div>
+            <div class="footer__left-bar-info">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+          </div>
+              <div class="footer-menu"></div>
+          <div class="footer__right-bar">
+            <div class="footer__right-bar-title h3">Подписка</div>
+            <div class="footer__right-bar-info">Получайте специальные предложения и новости сервиса</div>
+                <div class="text-field">
+                  <input class="text-field__input" type="text" id="name label" name="name label" placeholder="Email"><i class="input__icon">arrow_forward</i>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-bar">
+        <div class="container">
+              <div class="copyright">Copyright © 2018 Toxin отель. Все права защищены.</div>
+              <div class="social-links"><a class="social-links__link" href="#"><i class="fab fa-twitter"></i></a><a class="social-links__link" href="#"><i class="fab fa-facebook-square"></i></a><a class="social-links__link" href="#"><i class="fab fa-instagram"></i></a><a class="social-links__link" href="#"><img src="./images/facebook-icon.png" alt="social-icon"></a>
+              </div>
+        </div>
+      </div>
+    </footer>
+  <script src="/vendors.js"></script><script src="/app.js"></script></body>
+</html>

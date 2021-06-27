@@ -1,23 +1,20 @@
 @import '../_common/scss/vars.scss';
 @import '../button/button.scss';
 
-.dropdown {
-    width: 320px;
+
+.dropdown-title {
+    margin-bottom: 5px;
 }
+
 .dropdown-list {
     position: relative;
     width: 100%;
-    border: 1px solid $darkShade25;
-    box-sizing: border-box;
-    border-radius: 4px;
 }
 
 .dropdown__header {
     position: relative;
-    width: 320px;
-    padding: 12px 15px;
-    border-bottom: 1px solid $darkShade25;
-    margin-bottom: -1px;
+    width: 100%;
+    padding: 9px 14px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
@@ -25,6 +22,8 @@
     line-height: 24px;
     color: $darkShade75;
     box-sizing: border-box;
+    border: 1px solid rgba(31,32,65,.25);
+    border-radius: 4px;
 }
 
 .dropdown__item-title {
@@ -32,21 +31,22 @@
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 10px;
     text-transform: uppercase;
     color: #1F2041;
+    padding: 9px 0 12px 1px;
 }
 
 .dropdown__list-items {
     position: absolute;
-    top: 45px;
-    left: -1px;
+    top: 43px;
+    left: 0px;
     z-index: 2;
     width: 320px;
     border: 1px solid $darkShade25;
     box-sizing: border-box;
     border-radius: 0 0 4px 4px;
-    padding: 3.5px 7px;
+    padding: 0px 6px 0px 13px;
     background-color: #fff;
 }
 
@@ -54,28 +54,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.5px 0 3.5px 8px;
+    margin-top: 6px;
 }
 
 .dropdown__icon {
     position: absolute;
-    top: 25%;
-    right: 10px;
+    top: 9px;
+    right: 9px;
     text-transform: none;
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    // line-height: 24px;
     color: $darkShade50;
 }
 
 .input {
     width: 32px;
-    margin-left: -4px;
-    margin-right: -4px;
+    height: 12px;
+    margin-top: 7px;
     padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
     text-align: center;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.dropdown__input-control {
+    display: flex;
+    margin-top: -1px;
 }
 
 .minus,
@@ -106,8 +117,8 @@
 }
 
 .dropdown__button-block {
-    padding-top: 11.5px;
-    padding-left: 7px;
+    padding-top: 18px;
+    padding-bottom: 12px;
     display: none;
     justify-content: space-between;
 }

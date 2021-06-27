@@ -17,6 +17,10 @@
     color: $darkShade75;
 }
 
+.dropdown-calendar__label {
+    margin-bottom: 5px;
+}
+
 .date-end, .date-start {
     font-family: 'Montserrat';
     font-style: normal;
@@ -25,8 +29,7 @@
     font-size: 14px;
     color: $darkShade75;
     width: 150px;
-    height: 44px;
-    padding-left: 14px;
+    padding: 8px 14px 11px;
     border: 1px solid $darkShade25;
     box-sizing: border-box;
     border-radius: 4px;
@@ -39,7 +42,7 @@
 
 .dropdown-calendar__icon {
     position: absolute;
-    top: 27px;
+    top: 31px;
     right: 10px;
     text-transform: none;
     font-family: 'Material Icons';
@@ -133,7 +136,6 @@
 
 .datepicker {
     width: 320px;
-    height: 369px;
     box-sizing: border-box;
 }
 
@@ -145,6 +147,9 @@
     line-height: 23px;
     text-align: center;
     color: #1F2041;
+    border-radius: 0;
+    margin-right: -1px;
+    margin-top: -1px;
 }
 
 .datepicker--nav-action .material-icons {
@@ -160,38 +165,35 @@
 }
 
 .datepicker--days-names {
-    width: 280px;
-    margin: 0 auto;
+    justify-content: center;
+    margin: 8px 0 -2px;
 }
 .datepicker--day-name {
     font-family: 'Montserrat';
     width: 40px;
     height: 40px;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 12px;
-    line-height: 15px;
     display: flex;
     align-items: center;
-    text-align: center;
-    color: #BC9CFF;
+    color: #bc9cff;
+    text-transform: none;
+    justify-content: center;
+    flex: none;
 }
 
 .datepicker--nav {
-    width: 280px;
-    height: 24px;
-    margin: 20px auto;
+    margin: 15px 11px;
     border-bottom: none;
 }
 
 .datepicker--cells.datepicker--cells-days {
-    width: 280px;
-    margin: 0 auto;
+    justify-content: center;
 }
 
 .datepicker--buttons {
-    width: 280px;
-    margin: auto;
+    margin: 8px 19px;
     padding: 0;
     justify-content: space-between;
     border-top: none;
@@ -202,12 +204,24 @@
     display: flex;
     flex-grow: 0;
     align-items: center;
+    margin-top: -2px;
 }
 
 .datepicker--button:hover {
     background: transparent;
 }
 
-// .datepicker--pointer {
-//     display: none;
-// }
+.datepicker--cell.-range-to- {
+    border: none;
+}
+
+.datepicker--cell.-selected- {
+    background: $purpleGradient;
+    border-radius: 22px;
+    color: #FFFFFF;
+}
+
+.datepickers-container {
+    position: absolute;
+    top: -7px;
+}

@@ -6,6 +6,8 @@
 
 .nav__list-item {
     margin-right: 20px;
+    font-size: 14px;
+    line-height: 11px;
 }
 
 .nav__list-item--active .nav__link {
@@ -13,18 +15,18 @@
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 11px;
     color: $darkShade75;
 }
 
 .nav__list-item--sub-menu {
-    padding-right: 20px;
+    padding-right: 24.5px;
     position: relative;
 }
 
 .nav__list-item--dropdwn-list-icon {
     position: absolute;
-    top: 0;
+    top: 1px;
     right: 0;
     text-transform: none;
     font-family: 'Material Icons';
@@ -40,8 +42,9 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 11px;
     color: $darkShade50;
+    padding-right: 0.3px;
 }
 
 .nav__sub-menu-list {

@@ -1,4 +1,4 @@
-extends ../templates/main.pug
+//- extends ../templates/main.pug
 include ../bundles/cards.bundle.pug
 
 block variable
@@ -6,7 +6,7 @@ block variable
 
 block main
     section
-        .container
+        .container.page-cards
             +pick-up-a-room({
                 title: 'Найдём номера под ваши пожелания',
             })

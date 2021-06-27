@@ -3,8 +3,9 @@
 //mixin text-field
 
 .text-field {
-  display: inline-block;
-  position: relative;
+    width: 100%;
+    display: inline-block;
+    position: relative;
 }
 
 .text-field__label {
@@ -20,12 +21,12 @@
 
 .text-field__input {
     display: block;
-    width: 320px;
+    width: 100%;
     height: 44px;
     background: #fff;
     border: 1px solid $darkShade25;
     border-radius: 4px;
-    padding: 13px 15px;
+    padding: 13px 14px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;

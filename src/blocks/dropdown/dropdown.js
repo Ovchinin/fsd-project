@@ -39,16 +39,20 @@
         }
 
         function applyButton() {
+            let headerBlock = dropdown.querySelector('.dropdown__header');
             let apply = dropdown.querySelector('.dropdown__apply');
             let header = dropdown.querySelector('.dropdown__header-value');
             apply.addEventListener('click', function () {
                 let itemVal = getItemValue();
                 header.innerHTML = itemVal;
+                headerBlock.classList.remove('show');
+                headerBlock.style.borderRadius = '4px'
             });
         }
         applyButton()
 
         function clearButton() {
+            let headerBlock = dropdown.querySelector('.dropdown__header');
             let header = dropdown.querySelector('.dropdown__header-value');
             let clearBtn = dropdown.querySelector('.dropdown__clear')
             let items = dropdown.querySelectorAll('.dropdown__item');
@@ -56,6 +60,8 @@
                 clearBtn.addEventListener('click', function () {
                     item.querySelector('.input').value = "0";
                     header.innerHTML = header.dataset.title;
+                    headerBlock.classList.remove('show');
+                    headerBlock.style.borderRadius = '4px'
                 });
             })
         }
@@ -73,8 +79,10 @@
                     className == 'dropdown__icon') {
                     if (header.classList.contains('show')) {
                         header.classList.remove('show')
+                        header.style.borderRadius = '4px'
                     } else {
                         header.classList.add('show')
+                        header.style.borderRadius = '4px 4px 0 0'
                     }
                 }
             }

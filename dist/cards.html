@@ -1,252 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
-  <link href="/vendors.css" rel="stylesheet"><link href="/app.css" rel="stylesheet"></head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="nav-bar">
-              <div class="logo-group"><img class="logo-img" src="./images/logo/logo.png"><img class="logo-text" src="./images/logo/TOXIN.svg"></div>
-              <div class="nav main-menu"></div>
+<head><link href="/vendors.css" rel="stylesheet"><link href="/app.css" rel="stylesheet"></head>
+<section>
+  <div class="container page-cards">
+    <form class="pick-up-a-room">
+      <div class="pick-up-a-room__title h1">Найдём номера под ваши пожелания</div>
+      <div class="dropdown-calendar pick-up-a-room__calendar">
+        <div class="dropdown-calendar__item">
+          <label class="dropdown-calendar__label h3" for="start-date-search">Прибытие</label>
+          <input class="date-start" type="text" id="start-date-search" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
         </div>
-        <div class="nav-bar--authorization">
-              <div class="logo-group"><img class="logo-img" src="./images/logo/logo.png"><img class="logo-text" src="./images/logo/TOXIN.svg"></div>
-              <div class="nav second-menu"></div>
+        <div class="dropdown-calendar__item">
+          <label class="dropdown-calendar__label h3" for="end-date-search">Выезд</label>
+          <input class="date-end" type="text" id="end-date-search" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
         </div>
       </div>
-    </header>
-    <section>
-      <div class="container">
-        <div class="pick-up-a-room">
-          <div class="pick-up-a-room__title h1">Найдём номера под ваши пожелания</div>
-          <div class="dropdown-calendar pick-up-a-room__calendar">
-            <div class="dropdown-calendar__item">
-              <label class="dropdown-calendar__label h3" for="start-date-search">Прибытие</label>
-              <input class="date-start" type="text" id="start-date-search" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
-            </div>
-            <div class="dropdown-calendar__item">
-              <label class="dropdown-calendar__label h3" for="end-date-search">Выезд</label>
-              <input class="date-end" type="text" id="end-date-search" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
-            </div>
+      <div class="dropdown pick-up-a-room__dropdown">
+        <h3 class="dropdown-title">Гости</h3>
+        <div class="dropdown-list dropdown--guest">
+          <div class="dropdown__header">
+            <div class="dropdown__header-value" data-title="Сколько гостей">Сколько гостей</div><i class="dropdown__icon">expand_more</i>
           </div>
-          <div class="dropdown pick-up-a-room__dropdown">
-            <h3 class="dropdown-title">Гости</h3>
-            <div class="dropdown-list dropdown--guest">
-              <div class="dropdown__header">
-                <div class="dropdown__header-value" data-title="Сколько гостей">Сколько гостей</div><i class="dropdown__icon">expand_more</i>
-              </div>
-              <div class="dropdown__list-items">
-                <div class="dropdown__item">
-                  <p class="dropdown__item-title">взрослые</p>
-                  <div class="dropdown__input-control">
-                    <button class="minus" disabled>-</button>
-                    <input class="input" type="number" min="0" max="10" step="1" value="0">
-                    <button class="plus">+</button>
-                  </div>
-                </div>
-                <div class="dropdown__item">
-                  <p class="dropdown__item-title">дети</p>
-                  <div class="dropdown__input-control">
-                    <button class="minus" disabled>-</button>
-                    <input class="input" type="number" min="0" max="10" step="1" value="0">
-                    <button class="plus">+</button>
-                  </div>
-                </div>
-                <div class="dropdown__item">
-                  <p class="dropdown__item-title">младенцы</p>
-                  <div class="dropdown__input-control">
-                    <button class="minus" disabled>-</button>
-                    <input class="input" type="number" min="0" max="10" step="1" value="0">
-                    <button class="plus">+</button>
-                  </div>
-                </div>
-                <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
-                </div>
+          <div class="dropdown__list-items">
+            <div class="dropdown__item">
+              <p class="dropdown__item-title">взрослые</p>
+              <div class="dropdown__input-control">
+                <button class="minus" disabled>-</button>
+                <input class="input" type="number" min="0" max="10" step="1" value="0">
+                <button class="plus">+</button>
               </div>
             </div>
-          </div><a class="button-100 pick-up-a-room__button">подобрать номер<i class="button__icon">arrow_forward</i></a>
-        </div>
-        <div class="check-in-form">
-          <div class="check-in-form__title h1">Регистрация аккаунта</div>
-          <div class="text-field check-in-form__input">
-            <input class="text-field__input" type="text" id="Name" name="Name" placeholder="Имя">
-          </div>
-          <div class="text-field check-in-form__input">
-            <input class="text-field__input" type="text" id="Surname" name="Surname" placeholder="Фамилия">
-          </div>
-          <div class="radio-buttons check-in-form__sex">
-            <div class="radio-buttons__item">
-              <input class="radio-buttons__input" type="radio" id="man" value="man" name="sex">
-              <label class="radio-buttons__label" for="man">Мужчина</label>
+            <div class="dropdown__item">
+              <p class="dropdown__item-title">дети</p>
+              <div class="dropdown__input-control">
+                <button class="minus" disabled>-</button>
+                <input class="input" type="number" min="0" max="10" step="1" value="0">
+                <button class="plus">+</button>
+              </div>
             </div>
-            <div class="radio-buttons__item">
-              <input class="radio-buttons__input" type="radio" id="woman" value="woman" name="sex">
-              <label class="radio-buttons__label" for="woman">Женщина</label>
+            <div class="dropdown__item">
+              <p class="dropdown__item-title">младенцы</p>
+              <div class="dropdown__input-control">
+                <button class="minus" disabled>-</button>
+                <input class="input" type="number" min="0" max="10" step="1" value="0">
+                <button class="plus">+</button>
+              </div>
             </div>
-          </div>
-          <div class="dropdown-calendar check-in-form__calendar">
-            <div class="dropdown-calendar__item">
-              <label class="dropdown-calendar__label h3" for="start2">дата рождения</label>
-              <input class="date-start" type="text" id="start2" placeholder="ДД.ММ.ГГГГ">
+            <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
             </div>
-          </div>
-          <div class="text-field check-in-form__input">
-            <label class="text-field__label" for="email-1">данные для входа в сервис</label>
-            <input class="text-field__input" type="email" pattern=".+@globex.com" id="email-1" name="email-1" placeholder="Email">
-          </div>
-          <div class="text-field check-in-form__input">
-            <input class="text-field__input" type="password" id="password-1" name="password-1" placeholder="Пароль">
-          </div>
-          <div class="toggle check-in-form__toggle">
-            <input class="toggle__input" type="checkbox" id="toggle" name="toggle">
-            <label class="toggle__label" for="toggle">Получать спецпредложения</label>
-          </div><a class="button-100 check-in-form__button">подобрать номер<i class="button__icon">arrow_forward</i></a>
-          <div class="check-in-form__login">
-            <p class="check-in-form__login-text">Уже есть аккаунт на Toxin</p><a class="button-border check-in-form__login-btn">войти</a>
           </div>
         </div>
-        <div class="booking-form">
-          <div class="booking-form__header">
-            <div class="booking-form__number-group"><span class="booking-form__number">№</span><span class="booking-form__number-item">888</span><span class="booking-form__number-category">люкс</span></div>
-            <div class="booking-form__number-price-group"><span class="booking-form__number-price">9 990</span><span class="booking-form__number-currency-type">₽</span><span class="booking-form__number-per-day">в сутки</span></div>
-          </div>
-          <div class="dropdown-calendar booking-form__calendar">
-            <div class="dropdown-calendar__item">
-              <label class="dropdown-calendar__label h3" for="start-booking">Прибытие</label>
-              <input class="date-start" type="text" id="start-booking" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
-            </div>
-            <div class="dropdown-calendar__item">
-              <label class="dropdown-calendar__label h3" for="end-booking">Выезд</label>
-              <input class="date-end" type="text" id="end-booking" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
-            </div>
-          </div>
-          <div class="dropdown booking-form__guest">
-            <h3 class="dropdown-title">Гости</h3>
-            <div class="dropdown-list dropdown--guest">
-              <div class="dropdown__header">
-                <div class="dropdown__header-value" data-title="Сколько гостей">Сколько гостей</div><i class="dropdown__icon">expand_more</i>
-              </div>
-              <div class="dropdown__list-items">
-                <div class="dropdown__item">
-                  <p class="dropdown__item-title">взрослые</p>
-                  <div class="dropdown__input-control">
-                    <button class="minus" disabled>-</button>
-                    <input class="input" type="number" min="0" max="10" step="1" value="0">
-                    <button class="plus">+</button>
-                  </div>
-                </div>
-                <div class="dropdown__item">
-                  <p class="dropdown__item-title">дети</p>
-                  <div class="dropdown__input-control">
-                    <button class="minus" disabled>-</button>
-                    <input class="input" type="number" min="0" max="10" step="1" value="0">
-                    <button class="plus">+</button>
-                  </div>
-                </div>
-                <div class="dropdown__item">
-                  <p class="dropdown__item-title">младенцы</p>
-                  <div class="dropdown__input-control">
-                    <button class="minus" disabled>-</button>
-                    <input class="input" type="number" min="0" max="10" step="1" value="0">
-                    <button class="plus">+</button>
-                  </div>
-                </div>
-                <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="booking-form__calculator">
-            <div class="booking-form__room-price-group">
-              <div class="booking-form__left-group">
-                <div class="booking-form__room-price"><span class="booking-form__price">9 990</span><span class="booking-form__currency-type">₽</span><span class="booking-form__separator">х</span></div>
-                <div class="booking-form__days">
-                  <div class="booking-form__days">4</div>
-                  <div class="booking-form__days-label">суток</div>
-                </div>
-              </div>
-              <div class="booking-form__preliminary-price"><span class="booking-form__price">39 960</span><span class="booking-form__currency-type">₽</span></div>
-            </div>
-            <div class="booking-form__service-fee-group">
-              <div class="booking-form__left-group"><span class="booking-form__service-fee-description">Сбор за услуги: </span>
-                <div class="booking-form__service-fee-info"><span class="booking-form__service-fee-info-type">скидка </span><span class="booking-form__service-fee-info-price">39 960</span><span class="booking-form__service-fee-info-currency-type">₽</span><i class="material-icons booking-form__info-icon">error_outline</i></div>
-              </div>
-              <div class="booking-form__preliminary-price"><span class="booking-form__price">0</span><span class="booking-form__currency-type">₽</span></div>
-            </div>
-            <div class="booking-form__extra-charges-group">
-              <div class="booking-form__left-group">
-                <div class="booking-form__extra-charges-description">Сбор за дополнительные услуги</div><i class="material-icons booking-form__info-icon">error_outline</i>
-              </div>
-              <div class="booking-form__preliminary-price"><span class="booking-form__price">0</span><span class="booking-form__currency-type">₽</span></div>
-            </div>
-            <div class="booking-form__total-price-group">
-              <div class="booking-form__total-price-info">Итого</div>
-              <div class="booking-form__total-price-separator"></div>
-              <div class="booking-form__total-price"><span class="booking-form__total-price-value">38 081</span><span class="booking-form__total-price-currency-type">₽</span></div>
-            </div>
-          </div><a class="button-100 booking-form__button">забронировать<i class="button__icon">arrow_forward</i></a>
+      </div><a class="button-100 pick-up-a-room__button">подобрать номер<i class="button__icon">arrow_forward</i></a>
+    </form>
+    <form class="check-in-form">
+      <div class="check-in-form__title h1">Регистрация аккаунта</div>
+      <div class="text-field check-in-form__input">
+        <input class="text-field__input" type="text" id="Name" name="Name" placeholder="Имя">
+      </div>
+      <div class="text-field check-in-form__input">
+        <input class="text-field__input" type="text" id="Surname" name="Surname" placeholder="Фамилия">
+      </div>
+      <div class="radio-buttons check-in-form__sex">
+        <div class="radio-buttons__item">
+          <input class="radio-buttons__input" type="radio" id="man" value="man" name="sex">
+          <label class="radio-buttons__label" for="man">Мужчина</label>
         </div>
-        <div class="authorization-form">
-          <div class="authorization-form__title h1">Войти</div>
-          <div class="text-field authorization-form__input">
-            <input class="text-field__input" type="email" pattern=".+@globex.com" id="email" name="email" placeholder="Email">
-          </div>
-          <div class="text-field authorization-form__input">
-            <input class="text-field__input" type="password" id="password" name="password" placeholder="Пароль">
-          </div><a class="button-100 authorization-form__button">подобрать номер<i class="button__icon">arrow_forward</i></a>
-          <div class="authorization-form__login">
-            <p class="authorization-form__login-text">Нет аккаунта на Toxin?</p><a class="button-border authorization-form__login-btn">создать</a>
-          </div>
+        <div class="radio-buttons__item">
+          <input class="radio-buttons__input" type="radio" id="woman" value="woman" name="sex">
+          <label class="radio-buttons__label" for="woman">Женщина</label>
         </div>
-        <div class="room-preview">
-          <div class="room-preview__slider">
-            <div class="image-slider"><img src="./images/slider/room1.jpg" alt=""><img src="./images/slider/room2.jpg" alt=""><img src="./images/slider/room1.jpg" alt=""><img src="./images/slider/room2.jpg" alt="">
-            </div>
+      </div>
+      <div class="dropdown-calendar check-in-form__calendar">
+        <div class="dropdown-calendar__item">
+          <label class="dropdown-calendar__label h3" for="start2">дата рождения</label>
+          <input class="date-start" type="text" id="start2" placeholder="ДД.ММ.ГГГГ">
+        </div>
+      </div>
+      <div class="text-field check-in-form__input">
+        <label class="text-field__label" for="email-1">данные для входа в сервис</label>
+        <input class="text-field__input" type="email" pattern=".+@globex.com" id="email-1" name="email-1" placeholder="Email">
+      </div>
+      <div class="text-field check-in-form__input">
+        <input class="text-field__input" type="password" id="password-1" name="password-1" placeholder="Пароль">
+      </div>
+      <div class="toggle check-in-form__toggle">
+        <input class="toggle__input" type="checkbox" id="toggle" name="toggle">
+        <label class="toggle__label" for="toggle">Получать спецпредложения</label>
+      </div><a class="button-100 check-in-form__button">подобрать номер<i class="button__icon">arrow_forward</i></a>
+      <div class="check-in-form__login">
+        <p class="check-in-form__login-text">Уже есть аккаунт на Toxin</p><a class="button-border check-in-form__login-btn">войти</a>
+      </div>
+    </form>
+    <form class="booking-form">
+      <div class="booking-form__header">
+        <div class="booking-form__number-group"><span class="booking-form__number">№</span><span class="booking-form__number-item">888</span><span class="booking-form__number-category">люкс</span></div>
+        <div class="booking-form__number-price-group"><span class="booking-form__number-price">9 990</span><span class="booking-form__number-currency-type">₽</span><span class="booking-form__number-per-day">в сутки</span></div>
+      </div>
+      <div class="dropdown-calendar booking-form__calendar">
+        <div class="dropdown-calendar__item">
+          <label class="dropdown-calendar__label h3" for="start-booking">Прибытие</label>
+          <input class="date-start" type="text" id="start-booking" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+        </div>
+        <div class="dropdown-calendar__item">
+          <label class="dropdown-calendar__label h3" for="end-booking">Выезд</label>
+          <input class="date-end" type="text" id="end-booking" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+        </div>
+      </div>
+      <div class="dropdown booking-form__guest">
+        <h3 class="dropdown-title">Гости</h3>
+        <div class="dropdown-list dropdown--guest">
+          <div class="dropdown__header">
+            <div class="dropdown__header-value" data-title="Сколько гостей">Сколько гостей</div><i class="dropdown__icon">expand_more</i>
           </div>
-          <div class="room-preview__header">
-            <div class="room-preview__number-group"><span class="room-preview__number">№</span><span class="room-preview__number-item">888</span><span class="room-preview__number-category">люкс</span></div>
-            <div class="room-preview__number-price-group"><span class="room-preview__number-price">9 990</span><span class="room-preview__number-currency-type">₽</span><span class="room-preview__number-per-day">в сутки</span></div>
-          </div>
-          <div class="room-preview__rating-group">
-            <div class="star-rating"><i class="material-icons star-rating__icon" data-value="2">star</i><i class="material-icons star-rating__icon" data-value="3">star</i><i class="material-icons star-rating__icon" data-value="4">star</i><i class="material-icons star-rating__icon" data-value="5">star</i><i class="material-icons star-rating__icon" data-value="6">star</i>
+          <div class="dropdown__list-items">
+            <div class="dropdown__item">
+              <p class="dropdown__item-title">взрослые</p>
+              <div class="dropdown__input-control">
+                <button class="minus" disabled>-</button>
+                <input class="input" type="number" min="0" max="10" step="1" value="0">
+                <button class="plus">+</button>
+              </div>
             </div>
-            <div class="room-preview__rating"><span class="room-preview__rating-count">145</span><span class="room-preview__rating-info">Отзывов</span></div>
+            <div class="dropdown__item">
+              <p class="dropdown__item-title">дети</p>
+              <div class="dropdown__input-control">
+                <button class="minus" disabled>-</button>
+                <input class="input" type="number" min="0" max="10" step="1" value="0">
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="dropdown__item">
+              <p class="dropdown__item-title">младенцы</p>
+              <div class="dropdown__input-control">
+                <button class="minus" disabled>-</button>
+                <input class="input" type="number" min="0" max="10" step="1" value="0">
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="footer__top">
-        <div class="container">
-          <div class="footer__left-bar">
-            <div class="logo-group"><img class="logo-img" src="./images/logo/logo.png"><img class="logo-text" src="./images/logo/TOXIN.svg"></div>
-            <div class="footer__left-bar-info">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
-          </div>
-              <div class="footer-menu"></div>
-          <div class="footer__right-bar">
-            <div class="footer__right-bar-title">Подписка</div>
-            <div class="footer__right-bar-info">Получайте специальные предложения и новости сервиса</div>
-                <div class="text-field">
-                  <input class="text-field__input" type="text" id="name label" name="name label" placeholder="Email"><i class="input__icon">arrow_forward</i>
-                </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright-bar">
-        <div class="container">
-              <div class="copyright">Copyright © 2018 Toxin отель. Все права защищены.</div>
-              <div class="social-links"><a class="social-links__link" href="#"><i class="fab fa-twitter"></i></a><a class="social-links__link" href="#"><i class="fab fa-facebook-square"></i></a><a class="social-links__link" href="#"><i class="fab fa-instagram"></i></a>
-              </div>
-        </div>
-      </div>
-      <div class="footer-creative">
-            <div class="copyright">Copyright © 2018 Toxin отель. Все права защищены.</div>
-            <div class="social-links"><a class="social-links__link" href="#"><i class="fab fa-twitter"></i></a><a class="social-links__link" href="#"><i class="fab fa-facebook-square"></i></a><a class="social-links__link" href="#"><i class="fab fa-instagram"></i></a>
+      <div class="booking-form__calculator">
+        <div class="booking-form__room-price-group">
+          <div class="booking-form__left-group">
+            <div class="booking-form__room-price"><span class="booking-form__price">9 990</span><span class="booking-form__currency-type">₽</span><span class="booking-form__separator">х</span></div>
+            <div class="booking-form__days">
+              <div class="booking-form__days">4</div>
+              <div class="booking-form__days-label">суток</div>
             </div>
+          </div>
+          <div class="booking-form__preliminary-price"><span class="booking-form__price">39 960</span><span class="booking-form__currency-type">₽</span></div>
+        </div>
+        <div class="booking-form__service-fee-group">
+          <div class="booking-form__left-group"><span class="booking-form__service-fee-description">Сбор за услуги: </span>
+            <div class="booking-form__service-fee-info"><span class="booking-form__service-fee-info-type">скидка </span><span class="booking-form__service-fee-info-price">39 960</span><span class="booking-form__service-fee-info-currency-type">₽</span><i class="material-icons booking-form__info-icon">error_outline</i></div>
+          </div>
+          <div class="booking-form__preliminary-price"><span class="booking-form__price">0</span><span class="booking-form__currency-type">₽</span></div>
+        </div>
+        <div class="booking-form__extra-charges-group">
+          <div class="booking-form__left-group">
+            <div class="booking-form__extra-charges-description">Сбор за дополнительные услуги</div><i class="material-icons booking-form__info-icon">error_outline</i>
+          </div>
+          <div class="booking-form__preliminary-price"><span class="booking-form__price">0</span><span class="booking-form__currency-type">₽</span></div>
+        </div>
+        <div class="booking-form__total-price-group">
+          <div class="booking-form__total-price-info">Итого</div>
+          <div class="booking-form__total-price-separator"></div>
+          <div class="booking-form__total-price"><span class="booking-form__total-price-value">38 081</span><span class="booking-form__total-price-currency-type">₽</span></div>
+        </div>
+      </div><a class="button-100 booking-form__button">забронировать<i class="button__icon">arrow_forward</i></a>
+    </form>
+    <form class="authorization-form">
+      <div class="authorization-form__title h1">Войти</div>
+      <div class="text-field authorization-form__input">
+        <input class="text-field__input" type="email" pattern=".+@globex.com" id="email" name="email" placeholder="Email">
       </div>
-    </footer>
-  <script src="/vendors.js"></script><script src="/app.js"></script></body>
-</html>
+      <div class="text-field authorization-form__input">
+        <input class="text-field__input" type="password" id="password" name="password" placeholder="Пароль">
+      </div><a class="button-100 authorization-form__button">подобрать номер<i class="button__icon">arrow_forward</i></a>
+      <div class="authorization-form__login">
+        <p class="authorization-form__login-text">Нет аккаунта на Toxin?</p><a class="button-border authorization-form__login-btn">создать</a>
+      </div>
+    </form>
+    <div class="room-preview">
+      <div class="room-preview__slider">
+        <div class="image-slider"><img src="./images/slider/room1.jpg" alt=""><img src="./images/slider/room2.jpg" alt=""><img src="./images/slider/room1.jpg" alt=""><img src="./images/slider/room2.jpg" alt="">
+        </div>
+      </div>
+      <div class="room-preview__header">
+        <div class="room-preview__number-group"><span class="room-preview__number">№</span><span class="room-preview__number-item">888</span><span class="room-preview__number-category">люкс</span></div>
+        <div class="room-preview__number-price-group"><span class="room-preview__number-price">9 990</span><span class="room-preview__number-currency-type">₽</span><span class="room-preview__number-per-day">в сутки</span></div>
+      </div>
+      <div class="room-preview__rating-group">
+        <div class="star-rating"><i class="material-icons star-rating__icon" data-value="2">star</i><i class="material-icons star-rating__icon" data-value="3">star</i><i class="material-icons star-rating__icon" data-value="4">star</i><i class="material-icons star-rating__icon" data-value="5">star</i><i class="material-icons star-rating__icon" data-value="6">star</i>
+        </div>
+        <div class="room-preview__rating"><span class="room-preview__rating-count">145</span><span class="room-preview__rating-info">Отзывов</span></div>
+      </div>
+    </div>
+  </div>
+</section><script src="/vendors.js"></script><script src="/app.js"></script>

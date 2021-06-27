@@ -1,0 +1,33 @@
+@import '../blocks/headersAndFooters/header/header.scss';
+@import '../blocks/headersAndFooters/footer/footer.scss';
+@import '../blocks/logo/logo.scss';
+@import '../bundles/cards.bundle.scss';
+
+.top-content {
+    background-image: url('/images/top-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 830px;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.top-content .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-content__form {
+    align-self: baseline;
+
+}
+
+.top-content__info {
+    margin-top: auto;
+    text-align: right;
+    margin-bottom: 21px;
+    margin-right: -6px;
+    width: 300px;
+}

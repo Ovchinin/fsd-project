@@ -1,0 +1,16 @@
+extends ../templates/main.pug
+include ../bundles/landing-page.bundle.pug
+
+block variable
+    - var title = 'Landing page';
+
+block main
+    section.top-content
+        .container
+            +pick-up-a-room({
+                title: 'Найдём номера под ваши пожелания',
+            })(class="top-content__form")
+            .top-content__info Лучшие номера для вашей работы, отдыха и просто вдохновения
+
+
+            

@@ -5,6 +5,7 @@
 @import '../../../bundles/cards.bundle.scss';
 @import '../../../bundles/form-element.bundle.scss';
 @import '../../../bundles/headerAndFooter.bundle.scss';
+@import '../../../bundles/landing-page.bundle.scss';
 
 body {
     font-family: 'Montserrat';
@@ -16,7 +17,8 @@ body {
 }
 
 .container {
-    width: 720px;
+    max-width: 1200px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 

@@ -16,7 +16,7 @@ footer
 
             +footer-menu()
             .footer__right-bar
-                .footer__right-bar-title Подписка
+                .footer__right-bar-title.h3 Подписка
                 .footer__right-bar-info Получайте специальные предложения и новости сервиса
                 +text-field({
                     type: 'text',
@@ -30,20 +30,20 @@ footer
             +social-links({
                 items: [
                     {href:"#", icon_class:"fa-twitter"},
-                    {href:"#", icon_class:"fa-facebook-square"}, 
-                    {href:"#", icon_class:"fa-instagram"}, 
+                    {href:"#", icon_class:"icon-img", icon_img:"./images/facebook-icon.svg"}, 
+                    {href:"#", icon_class:"fa-instagram"},  
                 ],
             })
 
 
-    .footer-creative
-        .container
-            +logo()
-            +copyright()
-            +social-links({
-                items: [
-                    {href:"#", icon_class:"fa-twitter"},
-                    {href:"#", icon_class:"fa-facebook-square"}, 
-                    {href:"#", icon_class:"fa-instagram"}, 
-                ],
-            })
+    //- .footer-creative
+    //-     .container
+    //-         +logo()
+    //-         +copyright()
+    //-         +social-links({
+    //-             items: [
+    //-                 {href:"#", icon_class:"fa-twitter"},
+    //-                 {href:"#", icon_class:"fa-facebook-square"}, 
+    //-                 {href:"#", icon_class:"fa-instagram"}, 
+    //-             ],
+    //-         })

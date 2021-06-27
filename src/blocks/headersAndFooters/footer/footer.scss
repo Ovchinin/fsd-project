@@ -1,15 +1,26 @@
 @import '../../../blocks/_common/scss/vars.scss';
 
+.footer__top {
+    padding-top: 100px;
+    padding-bottom: 84px;
+    border-bottom: 2px solid #E5E5E5;
+}
+
 .footer__top .container,
 .copyright-bar .container {
-    width: 720px;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
+.copyright-bar {
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
 .footer-creative .container {
-    width: 720px;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -19,6 +30,12 @@
 .social-links {
     display: flex;
     justify-content: space-between;
+    margin-right: 3px;
+    margin-top: -4px;
+}
+
+.social-links__link {
+    margin-left: 22px;
 }
 
 .social-links__link i {
@@ -30,4 +47,44 @@
     background: $purpleGradient;
     background-clip: text;
     color: transparent;
+}
+
+.icon-img {
+    display: block;
+}
+
+.footer__left-bar {
+    width: 260px;
+    margin-right: 40px;
+}
+
+.footer__right-bar {
+    width: 260px;
+}
+
+.footer__left-bar .logo-group {
+    margin-bottom: 17px;
+}
+
+.footer__right-bar-title {
+    margin-top: 4px;
+    margin-bottom: 18px;
+}
+
+.footer__right-bar-info {
+    margin-bottom: 23px;
+}
+
+.footer-menu {
+    flex-grow: 1;
+}
+
+.copyright {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    margin-left: -1px;
+    color: $darkShade75;
 }

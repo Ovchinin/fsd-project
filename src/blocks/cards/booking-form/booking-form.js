@@ -30,5 +30,3 @@ let b = elemFromNodeList(a);
 let start = getElement(b, model.startElem);
 let end = getElement(b, model.endElem);
 let c = getAllElem(model.btn);
-
-console.log(c)

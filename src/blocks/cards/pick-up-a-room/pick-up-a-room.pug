@@ -1,7 +1,8 @@
 include ../../../bundles/form-element.bundle.pug
 
 mixin pick-up-a-room(option)
-    .pick-up-a-room
+    div(class="pick-up-a-room")&attributes(attributes)
+        //- при указании тега form вместо div, при клике на "+" в поле кол-во гостей ломается логика и сразу отправляется "Запрос"
         .pick-up-a-room__title.h1=option.title
         +dropdown-calendar({
             items: [

@@ -15,7 +15,7 @@ function draw(object, element) {
 
         let li = document.createElement("li")
         li.className = "menu__list-item"
-        li.innerHTML = `<span class="menu__item-title">${element.label}</span>`
+        li.innerHTML = `<span class="menu__item-title h3">${element.label}</span>`
         navList.appendChild(li)
 
         let ul = document.createElement("ul")

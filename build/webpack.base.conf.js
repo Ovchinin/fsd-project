@@ -123,12 +123,20 @@ module.exports = {
             inject: true,
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/landing-page.pug',
+            filename: 'landing-page.html',
+            inject: true,
+            minify: false
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 { from: './src/blocks/_common/fonts/', to: './fonts' },
                 { from: './src/blocks/cards/room-preview/image/', to: './images/slider/' },
                 { from: './src/blocks/reviews/img/', to: './images/review/' },
                 { from: './src/blocks/logo/logo-img/', to: './images/logo/' },
+                { from: './src/pages/img/', to: './images/' },
+                { from: './src/blocks/social-links/img/', to: './images/' },
             ]
         }),
     ]

@@ -4,5 +4,11 @@
 .nav-bar--authorization {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+
+.button-block .button-border {
+    margin-right: 21px;
 }
 

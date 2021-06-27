@@ -13,41 +13,23 @@ $(() => {
         let elem = $(this);
         let start = elem.find(model.startElem);
         let end = elem.find(model.endElem);
-        let userMinDate = start.data('user-min-date');
 
-        if (userMinDate) {
-            start.datepicker({
-                minDate: new Date(),
-                clearButton: true,
-                navTitles: {
-                    days: 'MM yyyy',
-                },
-                prevHtml: '<i class="material-icons">arrow_back</i>',
-                nextHtml: '<i class="material-icons">arrow_forward</i>',
-                multipleDatesSeparator: ' - ',
-                onSelect: function (date) {
-                    const dates = date.split(' - ');
-                    $(start).val(dates[0]);
-                    $(end).val(dates[1]);
-                },
-            });
-        } else {
-            start.datepicker({
-                clearButton: true,
-                navTitles: {
-                    days: 'MM yyyy',
-                },
-                $body: '.dropdown-calendar',
-                prevHtml: '<i class="material-icons">arrow_back</i>',
-                nextHtml: '<i class="material-icons">arrow_forward</i>',
-                multipleDatesSeparator: ' - ',
-                onSelect: function (date) {
-                    const dates = date.split(' - ');
-                    $(start).val(dates[0]);
-                    $(end).val(dates[1]);
-                },
-            });
-        }
+        start.datepicker({
+            //minDate: new Date(),
+            clearButton: true,
+            navTitles: {
+                days: 'MM yyyy',
+            },
+            $body: '.dropdown-calendar',
+            prevHtml: '<i class="material-icons">arrow_back</i>',
+            nextHtml: '<i class="material-icons">arrow_forward</i>',
+            multipleDatesSeparator: ' - ',
+            onSelect: function (date) {
+                const dates = date.split(' - ');
+                $(start).val(dates[0]);
+                $(end).val(dates[1]);
+            },
+        });
 
 
         elem.find(end).click(function () {
@@ -69,6 +51,13 @@ $(() => {
 
         let btnSend = buttonBlock.find('.datepicker--btn[data-action="submit"]');
         btnSend.click(function () {
+            $(model.startElem).each(function () {
+                $(this).data('datepicker').hide();
+            })
+        })
+
+        let clearBtn = elem.find('span[data-action="clear"]');
+        clearBtn.click(function () {
             $(model.startElem).each(function () {
                 $(this).data('datepicker').hide();
             })
