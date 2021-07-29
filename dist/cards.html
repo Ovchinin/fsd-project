@@ -1,16 +1,16 @@
 <head><link href="/vendors.css" rel="stylesheet"><link href="/app.css" rel="stylesheet"></head>
 <section>
   <div class="container page-cards">
-    <form class="pick-up-a-room">
+    <div class="pick-up-a-room">
       <div class="pick-up-a-room__title h1">Найдём номера под ваши пожелания</div>
       <div class="dropdown-calendar pick-up-a-room__calendar">
         <div class="dropdown-calendar__item">
-          <label class="dropdown-calendar__label h3" for="start-date-search">Прибытие</label>
-          <input class="date-start" type="text" id="start-date-search" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+          <label class="dropdown-calendar__label h3" for="start">Прибытие</label>
+          <input class="date-start" type="text" id="start" placeholder="ДД.ММ.ГГГГ" data-range="true" autocomplete="off"><i class="dropdown-calendar__icon">expand_more</i>
         </div>
         <div class="dropdown-calendar__item">
-          <label class="dropdown-calendar__label h3" for="end-date-search">Выезд</label>
-          <input class="date-end" type="text" id="end-date-search" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+          <label class="dropdown-calendar__label h3" for="end">Выезд</label>
+          <input class="date-end" type="text" id="end" placeholder="ДД.ММ.ГГГГ" data-range="true" autocomplete="off"><i class="dropdown-calendar__icon">expand_more</i>
         </div>
       </div>
       <div class="dropdown pick-up-a-room__dropdown">
@@ -44,12 +44,12 @@
                 <button class="plus">+</button>
               </div>
             </div>
-            <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+            <div class="dropdown__button-block"><a class="button-link dropdown__clear">Очистить</a><a class="button-link dropdown__apply">Применить</a>
             </div>
           </div>
         </div>
       </div><a class="button-100 pick-up-a-room__button">подобрать номер<i class="button__icon">arrow_forward</i></a>
-    </form>
+    </div>
     <form class="check-in-form">
       <div class="check-in-form__title h1">Регистрация аккаунта</div>
       <div class="text-field check-in-form__input">
@@ -70,8 +70,8 @@
       </div>
       <div class="dropdown-calendar check-in-form__calendar">
         <div class="dropdown-calendar__item">
-          <label class="dropdown-calendar__label h3" for="start2">дата рождения</label>
-          <input class="date-start" type="text" id="start2" placeholder="ДД.ММ.ГГГГ">
+          <label class="dropdown-calendar__label h3" for="start3">Дата прождения</label>
+          <input class="date-start" type="text" id="start3" placeholder="ДД.ММ.ГГГГ" autocomplete="off">
         </div>
       </div>
       <div class="text-field check-in-form__input">
@@ -96,12 +96,12 @@
       </div>
       <div class="dropdown-calendar booking-form__calendar">
         <div class="dropdown-calendar__item">
-          <label class="dropdown-calendar__label h3" for="start-booking">Прибытие</label>
-          <input class="date-start" type="text" id="start-booking" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+          <label class="dropdown-calendar__label h3" for="start">Прибытие</label>
+          <input class="date-start" type="text" id="start" placeholder="ДД.ММ.ГГГГ" data-range="true" autocomplete="off"><i class="dropdown-calendar__icon">expand_more</i>
         </div>
         <div class="dropdown-calendar__item">
-          <label class="dropdown-calendar__label h3" for="end-booking">Выезд</label>
-          <input class="date-end" type="text" id="end-booking" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+          <label class="dropdown-calendar__label h3" for="end">Выезд</label>
+          <input class="date-end" type="text" id="end" placeholder="ДД.ММ.ГГГГ" data-range="true" autocomplete="off"><i class="dropdown-calendar__icon">expand_more</i>
         </div>
       </div>
       <div class="dropdown booking-form__guest">
@@ -135,7 +135,7 @@
                 <button class="plus">+</button>
               </div>
             </div>
-            <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+            <div class="dropdown__button-block"><a class="button-link dropdown__clear">Очистить</a><a class="button-link dropdown__apply">Применить</a>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@
       </div>
       <div class="room-preview__header">
         <div class="room-preview__number-group"><span class="room-preview__number">№</span><span class="room-preview__number-item">888</span><span class="room-preview__number-category">люкс</span></div>
-        <div class="room-preview__number-price-group"><span class="room-preview__number-price">9 990</span><span class="room-preview__number-currency-type">₽</span><span class="room-preview__number-per-day">в сутки</span></div>
+        <div class="room-preview__number-price-group"><span class="room-preview__number-price">9990</span><span class="room-preview__number-currency-type">₽</span><span class="room-preview__number-per-day">в сутки</span></div>
       </div>
       <div class="room-preview__rating-group">
         <div class="star-rating"><i class="material-icons star-rating__icon" data-value="2">star</i><i class="material-icons star-rating__icon" data-value="3">star</i><i class="material-icons star-rating__icon" data-value="4">star</i><i class="material-icons star-rating__icon" data-value="5">star</i><i class="material-icons star-rating__icon" data-value="6">star</i>

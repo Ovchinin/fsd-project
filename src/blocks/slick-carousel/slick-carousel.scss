@@ -26,11 +26,13 @@
 
 .slider-dots {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 11px;
+    right: 13px;
     display: block;
 }
 .slider-dots li {
+    width: 7.5px;
+    height: 7.5px;
     position: relative;
     display: inline-block;
     margin: 0 2px;

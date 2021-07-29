@@ -5,11 +5,17 @@ mixin pick-up-a-room(option)
         //- при указании тега form вместо div, при клике на "+" в поле кол-во гостей ломается логика и сразу отправляется "Запрос"
         .pick-up-a-room__title.h1=option.title
         +dropdown-calendar({
+            dataRange: true,
             items: [
-                {label: 'Прибытие', id: 'start-date-search', class: 'date-start', icon: true}, 
-                {label: 'Выезд', id: 'end-date-search', class: 'date-end', icon: true}
+                {label: 'Прибытие', id: 'start', class: 'date-start'}, 
+                {label: 'Выезд', id: 'end', class: 'date-end'}
             ],
         })(class="pick-up-a-room__calendar")
-        +dropdown-list('Гости', 'guest', 'Сколько гостей', ['взрослые', 'дети', 'младенцы'])(class="pick-up-a-room__dropdown")
+        +dropdown-list({
+            title:  'Гости', 
+            type:   'guest', 
+            text:   'Сколько гостей', 
+            items:  ['взрослые', 'дети', 'младенцы'],
+        })(class="pick-up-a-room__dropdown")
         +button('100%', 'подобрать номер', true)(class="pick-up-a-room__button")
 

@@ -10,7 +10,7 @@ block main
             +text-field({
                 type: 'text',
                 text: 'Text Field', 
-                name: 'name label', 
+                name: 'test', 
                 placeholder: 'Email',
             }) 
             br
@@ -57,15 +57,29 @@ block main
             +button('100%', 'перейти к оплате', true)
             br
 
-            +range-slider
+            +range-slider({
+                title: 'диапазон цены',
+                desc: 'Стоимость за сутки пребывания в номере'
+            })
             br
-            +range-slider
+            //-+range-slider
             br
 
             +pagination
             br
-            +dropdown-list('Гости', 'guest', 'Сколько гостей', ['взрослые', 'дети', 'младенцы'])
-            +dropdown-list('Удобства', 'facilities', 'Удобства', ['спальни', 'кровати', 'ванные комнаты'])
+            +dropdown-list({
+                title:  'Гости', 
+                type:   'guest', 
+                text:   'Сколько гостей', 
+                items:  ['взрослые', 'дети', 'младенцы'],
+            })
+            br
+            +dropdown-list({
+                title:  'Удобства', 
+                type:   'facilities', 
+                text:   'Удобства', 
+                items:  ['спальни', 'кровати', 'ванные комнаты']
+            })
             br
             +checkbox-list({
                 title:  'checkbox button',
@@ -101,17 +115,31 @@ block main
             })
             br
             +bullet-list({
-                title: 'bullet list',
-                items: ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'],
+                title:  'bullet list',
+                items:  ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'],
             })
             br
             +dropdown-calendar({
+                dataRange: true,
                 items: [
-                    {label: 'Прибытие', id: 'start', class: 'date-start', icon: true}, 
-                    {label: 'Выезд', id: 'end', class: 'date-end', icon: true}
+                    {label: 'Прибытие', id: 'start', class: 'date-start'}, 
+                    {label: 'Выезд', id: 'end', class: 'date-end'}
                 ],
             })
             br
+            +dropdown-calendar({
+                dataRange: true,
+                items: [
+                    {label: 'Даты пребывания в отеле', id: 'start2', class: 'date-start'}, 
+                ],
+            })
+            br
+            +dropdown-calendar({
+                dataRange: false,
+                items: [
+                    {label: 'Дата прождения', id: 'start3', class: 'date-start'}, 
+                ],
+            })
             br
             +advantages({
                 items: [

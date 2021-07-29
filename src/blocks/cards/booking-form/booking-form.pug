@@ -13,13 +13,20 @@ mixin booking-form()
                 span.booking-form__number-per-day='в сутки'
                 
         +dropdown-calendar({
+            dataRange: true,
             items: [
-                {label: 'Прибытие', id: 'start-booking', class: 'date-start', icon: true}, 
-                {label: 'Выезд', id: 'end-booking', class: 'date-end', icon: true}
+                {label: 'Прибытие', id: 'start', class: 'date-start'}, 
+                {label: 'Выезд', id: 'end', class: 'date-end'}
             ],
         })(class="booking-form__calendar")
 
-        +dropdown-list('Гости', 'guest', 'Сколько гостей', ['взрослые', 'дети', 'младенцы'])(class="booking-form__guest")
+        +dropdown-list({
+            title:  'Гости', 
+            type:   'guest', 
+            text:   'Сколько гостей', 
+            items:  ['взрослые', 'дети', 'младенцы'],
+        })(class="booking-form__guest")
+        
         .booking-form__calculator
             .booking-form__room-price-group
                 .booking-form__left-group

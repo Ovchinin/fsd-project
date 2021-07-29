@@ -16,16 +16,16 @@
     </header>
     <section class="top-content">
       <div class="container">
-        <form class="pick-up-a-room top-content__form">
+        <div class="pick-up-a-room top-content__form">
           <div class="pick-up-a-room__title h1">Найдём номера под ваши пожелания</div>
           <div class="dropdown-calendar pick-up-a-room__calendar">
             <div class="dropdown-calendar__item">
-              <label class="dropdown-calendar__label h3" for="start-date-search">Прибытие</label>
-              <input class="date-start" type="text" id="start-date-search" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+              <label class="dropdown-calendar__label h3" for="start">Прибытие</label>
+              <input class="date-start" type="text" id="start" placeholder="ДД.ММ.ГГГГ" data-range="true" autocomplete="off"><i class="dropdown-calendar__icon">expand_more</i>
             </div>
             <div class="dropdown-calendar__item">
-              <label class="dropdown-calendar__label h3" for="end-date-search">Выезд</label>
-              <input class="date-end" type="text" id="end-date-search" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+              <label class="dropdown-calendar__label h3" for="end">Выезд</label>
+              <input class="date-end" type="text" id="end" placeholder="ДД.ММ.ГГГГ" data-range="true" autocomplete="off"><i class="dropdown-calendar__icon">expand_more</i>
             </div>
           </div>
           <div class="dropdown pick-up-a-room__dropdown">
@@ -59,12 +59,12 @@
                     <button class="plus">+</button>
                   </div>
                 </div>
-                <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+                <div class="dropdown__button-block"><a class="button-link dropdown__clear">Очистить</a><a class="button-link dropdown__apply">Применить</a>
                 </div>
               </div>
             </div>
           </div><a class="button-100 pick-up-a-room__button">подобрать номер<i class="button__icon">arrow_forward</i></a>
-        </form>
+        </div>
         <div class="top-content__info">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
       </div>
     </section>
@@ -88,7 +88,7 @@
       <div class="copyright-bar">
         <div class="container">
               <div class="copyright">Copyright © 2018 Toxin отель. Все права защищены.</div>
-              <div class="social-links"><a class="social-links__link" href="#"><i class="fab fa-twitter"></i></a><a class="social-links__link" href="#"><i class="fab fa-facebook-square"></i></a><a class="social-links__link" href="#"><i class="fab fa-instagram"></i></a><a class="social-links__link" href="#"><img src="./images/facebook-icon.png" alt="social-icon"></a>
+              <div class="social-links"><a class="social-links__link" href="#"><i class="fab fa-twitter"></i></a><a class="social-links__link" href="#"><img class="icon-img" src="./images/facebook-icon.svg" alt="social-icon"></a><a class="social-links__link" href="#"><i class="fab fa-instagram"></i></a>
               </div>
         </div>
       </div>

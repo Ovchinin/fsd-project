@@ -17,7 +17,24 @@ block main
             +authorization-form({
                 title: 'Войти',
             })
-            +room-preview()
+            +room-preview({
+                number: 888,
+                type: "люкс",
+                price: 9990,
+                currency: '₽',
+                days: 'в сутки',
+                current_rating: 5,
+                scale: 5,
+                number_of_ratings: 145,
+                images: {
+                            images: [
+                                {src: './images/slider/room1.jpg'},
+                                {src: './images/slider/room2.jpg'},
+                                {src: './images/slider/room1.jpg'},
+                                {src: './images/slider/room2.jpg'},
+                            ]
+                        },
+            })
 
 
 

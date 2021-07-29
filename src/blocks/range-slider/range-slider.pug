@@ -1,2 +1,5 @@
-mixin range-slider()
-    input.range-slider(type='slider')
+mixin range-slider(options)
+    .price-slider
+        h3.price-slider__title=options.title
+        input.range-slider(type='slider')
+        .price-slider__desc=options.desc

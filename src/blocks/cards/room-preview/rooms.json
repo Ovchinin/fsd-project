@@ -1,0 +1,290 @@
+[
+    {
+        "number": 888,
+        "type": "люкс",
+        "price": 9990,
+        "currency": "₽",
+        "days": "в сутки",
+        "current_rating": 5,
+        "scale": 5,
+        "number_of_ratings": 145,
+        "images": [
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            },
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            }
+        ]
+    },
+    {
+        "number": 840,
+        "type": "",
+        "price": 9900,
+        "currency": "₽",
+        "days": "в сутки",
+        "current_rating": 4,
+        "scale": 5,
+        "number_of_ratings": 65,
+        "images": [
+            {
+                "src": "./images/slider/room2.jpg"
+            },
+            {
+                "src": "./images/slider/room3.jpg"
+            },
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            }
+        ]
+    },
+    {
+        "number": 980,
+        "type": "люкс",
+        "price": 8500,
+        "currency": "₽",
+        "days": "в сутки",
+        "current_rating": 3,
+        "scale": 5,
+        "number_of_ratings": 35,
+        "images": [
+            {
+                "src": "./images/slider/room3.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            },
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            }
+        ]
+    },
+    {
+        "number": 856,
+        "type": "",
+        "price": 7300,
+        "currency": "₽",
+        "days": "в сутки",
+        "current_rating": 5,
+        "scale": 5,
+        "number_of_ratings": 19,
+        "images": [
+            {
+                "src": "./images/slider/room4.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            },
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            }
+        ]
+    },
+    {
+        "number": 740,
+        "type": "",
+        "price": 6000,
+        "currency": "₽",
+        "days": "в сутки",
+        "current_rating": 4,
+        "scale": 5,
+        "number_of_ratings": 44,
+        "images": [
+            {
+                "src": "./images/slider/room5.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            },
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            }
+        ]
+    },
+    {
+        "number": 982,
+        "type": "",
+        "price": 5800,
+        "currency": "₽",
+        "days": "в сутки",
+        "current_rating": 3,
+        "scale": 5,
+        "number_of_ratings": 56,
+        "images": [
+            {
+                "src": "./images/slider/room6.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            },
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            }
+        ]
+    },
+    {
+        "number": 678,
+        "type": "",
+        "price": 5500,
+        "currency": "₽",
+        "days": "в сутки",
+        "current_rating": 5,
+        "scale": 5,
+        "number_of_ratings": 45,
+        "images": [
+            {
+                "src": "./images/slider/room7.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            },
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            }
+        ]
+    },
+    {
+        "number": 450,
+        "type": "",
+        "price": 5300,
+        "currency": "₽",
+        "days": "в сутки",
+        "current_rating": 4,
+        "scale": 5,
+        "number_of_ratings": 39,
+        "images": [
+            {
+                "src": "./images/slider/room8.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            },
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            }
+        ]
+    },
+    {
+        "number": 350,
+        "type": "",
+        "price": 5000,
+        "currency": "₽",
+        "days": "в сутки",
+        "current_rating": 3,
+        "scale": 5,
+        "number_of_ratings": 77,
+        "images": [
+            {
+                "src": "./images/slider/room9.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            },
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            }
+        ]
+    },
+    {
+        "number": 666,
+        "type": "",
+        "price": 5000,
+        "currency": "₽",
+        "days": "в сутки",
+        "current_rating": 5,
+        "scale": 5,
+        "number_of_ratings": 25,
+        "images": [
+            {
+                "src": "./images/slider/room10.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            },
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            }
+        ]
+    },
+    {
+        "number": 444,
+        "type": "",
+        "price": 5000,
+        "currency": "₽",
+        "days": "в сутки",
+        "current_rating": 3,
+        "scale": 5,
+        "number_of_ratings": 15,
+        "images": [
+            {
+                "src": "./images/slider/room11.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            },
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            }
+        ]
+    },
+    {
+        "number": 352,
+        "type": "",
+        "price": 5000,
+        "currency": "₽",
+        "days": "в сутки",
+        "current_rating": 3,
+        "scale": 5,
+        "number_of_ratings": 55,
+        "images": [
+            {
+                "src": "./images/slider/room12.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            },
+            {
+                "src": "./images/slider/room1.jpg"
+            },
+            {
+                "src": "./images/slider/room2.jpg"
+            }
+        ]
+    }
+]

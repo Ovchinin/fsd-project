@@ -1,7 +1,8 @@
 mixin dropdown-calendar(option)
     div(class="dropdown-calendar")&attributes(attributes)
-        each item in option.items 
-            if item.icon
+
+        if option.dataRange 
+            each item in option.items
                 .dropdown-calendar__item
                     label(for=item.id class='dropdown-calendar__label h3') #{item.label}
                     input(
@@ -13,7 +14,14 @@ mixin dropdown-calendar(option)
                         autocomplete="off"
                     )
                     i.dropdown-calendar__icon='expand_more'
-            else 
+        else
+            each item in option.items 
                 .dropdown-calendar__item
                     label(for=item.id class='dropdown-calendar__label h3') #{item.label}
-                    input(type="text" id=item.id class=item.class placeholder='ДД.ММ.ГГГГ')
+                    input(
+                        type="text" 
+                        id=item.id 
+                        class=item.class 
+                        placeholder='ДД.ММ.ГГГГ' 
+                        autocomplete="off"
+                    )

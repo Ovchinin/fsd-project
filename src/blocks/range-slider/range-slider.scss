@@ -6,9 +6,9 @@
 }
 
 .irs--flat .irs-line {
+    top: 23px;
     height: 6px;
     background-color: #FFFFFF;
-    /* Dark 25% */
     border: 1px solid $darkShade25;
     box-sizing: border-box;
     border-radius: 3px;
@@ -16,17 +16,19 @@
 
 .irs--flat .irs-bar {
     position: absolute;
+    top: 23px;
     height: 6px;
     background: $greenGradient;
     border-radius: 3px;
 }
 
 .irs--flat .irs-handle {
-    width: 12px;
-    height: 12px;
+    top: 19px;
+    width: 14px;
+    height: 14px;
     background: $greenGradient;
     border: 2px solid #FFFFFF;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 .irs--flat .irs-handle > i {
@@ -61,5 +63,12 @@
 
 .irs--flat .irs-single {
     visibility: visible !important;
-    left: 65% !important;
+    left: 164px!important;
+    top: -15px;
+}
+
+.price-slider__desc {
+    font-size: 12px;
+    line-height: 10px;
+    margin-top: 6px;
 }

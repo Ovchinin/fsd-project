@@ -41,8 +41,8 @@
     position: absolute;
     top: 43px;
     left: 0px;
-    z-index: 2;
-    width: 320px;
+    z-index: 999;
+    width: 100%;
     border: 1px solid $darkShade25;
     box-sizing: border-box;
     border-radius: 0 0 4px 4px;
@@ -117,8 +117,8 @@
 }
 
 .dropdown__button-block {
-    padding-top: 18px;
-    padding-bottom: 12px;
+    padding-top: 19px;
+    padding-bottom: 11px;
     display: none;
     justify-content: space-between;
 }

@@ -4,35 +4,66 @@
 
         function getItemValue() {
             let headerVal = '';
-            let sumVal = 0;
-            let facilities = ''
-            let items = dropdown.querySelectorAll('.dropdown__item');
-            Array.prototype.forEach.call(items, item => {
-                let title = item.querySelector('.dropdown__item-title').innerHTML;
-                let input = Number(item.querySelector('.input').value);
-                sumVal += input;
 
-                if (input > 0) {
-                    facilities += input + ' ' + title + ', '
-                }
-                var sliced = facilities.slice(0, 20);
-                if (sliced.length < facilities.length) {
+            let headerValArr = [];
+            let facilities = [];
+
+            let sumVal = 0;
+            let baby = 0;
+
+            let items = dropdown.querySelectorAll('.dropdown__item');
+
+            if (dropdown.classList.contains('dropdown--facilities')) {
+                Array.prototype.forEach.call(items, item => {
+                    let title = item.querySelector('.dropdown__item-title').innerHTML;
+                    let inputVal = Number(item.querySelector('.input').value);
+
+                    if (inputVal > 0) {
+                        facilities.push(inputVal + ' ' + title)
+                    }
+                })
+                let arrToString = facilities.join(', ')
+                let sliced = arrToString.slice(0, 20);
+
+                if (sliced.length < arrToString.length) {
                     sliced += '...';
                 }
-                facilities = sliced;
-            })
-            if (dropdown.classList.contains('dropdown--guest')) {
-                if (sumVal == 0) {
-                    headerVal += 'Укажите количество гостей';
-                } else if (sumVal == 1) {
-                    headerVal += sumVal + ' гость';
-                } else if (sumVal > 1 && sumVal < 5) {
-                    headerVal += sumVal + ' гостя';
-                } else (
-                    headerVal += sumVal + ' гостей'
-                )
-            } else if (dropdown.classList.contains('dropdown--facilities')) {
-                headerVal = facilities;
+
+                headerVal = sliced;
+
+            } else if (dropdown.classList.contains('dropdown--guest')) {
+                Array.prototype.forEach.call(items, item => {
+                    let title = item.querySelector('.dropdown__item-title').innerHTML;
+                    let inputVal = Number(item.querySelector('.input').value);
+
+                    if (title == 'младенцы') {
+                        baby += inputVal;
+                    } else {
+                        sumVal += inputVal;
+                    }
+                })
+
+                if (sumVal > 0) {
+                    if (sumVal == 1) {
+                        headerValArr.push(sumVal + ' гость')
+                    } else if (sumVal > 1 && sumVal < 5) {
+                        headerValArr.push(sumVal + ' гостя')
+                    } else (
+                        headerValArr.push(sumVal + ' гостей')
+                    )
+                }
+
+                if (baby > 0) {
+                    if (baby == 1) {
+                        headerValArr.push(baby + ' младенец')
+                    } else if (baby > 1 && baby < 5) {
+                        headerValArr.push(baby + ' младенца')
+                    } else (
+                        headerValArr.push(baby + ' младенцев')
+                    )
+                }
+
+                headerVal = headerValArr.join(', ')
             }
 
             return headerVal;

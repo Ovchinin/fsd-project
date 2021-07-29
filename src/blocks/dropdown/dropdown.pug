@@ -1,14 +1,14 @@
 include ../button/button.pug
 
-mixin dropdown-list(title, type, text, items)
+mixin dropdown-list(options)
     div(class="dropdown")&attributes(attributes)
-        h3.dropdown-title=title
-        .dropdown-list(class='dropdown--'+type)
+        h3.dropdown-title=options.title
+        .dropdown-list(class='dropdown--'+options.type)
             .dropdown__header
-                .dropdown__header-value(data-title=text)=text
+                .dropdown__header-value(data-title=options.text)=options.text
                 i.dropdown__icon='expand_more'
             .dropdown__list-items
-                each item in items
+                each item in options.items
                     .dropdown__item
                         p.dropdown__item-title=item
                         .dropdown__input-control

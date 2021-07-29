@@ -10,6 +10,6 @@ $(".range-slider").ionRangeSlider({
     hide_min_max: true,
     keyboard: true,
     values_separator: ' - ',
-    prettify_enabled: false,
+    prettify_enabled: true,
     postfix: '₽'
 });

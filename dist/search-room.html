@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search room</title>
+  <link href="/vendors.css" rel="stylesheet"><link href="/app.css" rel="stylesheet"></head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav-bar">
+              <div class="logo-group"><img class="logo-img" src="./images/logo/logo.png"><img class="logo-text" src="./images/logo/TOXIN.svg"></div>
+              <div class="nav main-menu"></div>
+        </div>
+      </div>
+    </header>
+    <div class="container main-wrap">
+      <section class="filters">
+        <div class="dropdown-calendar">
+          <div class="dropdown-calendar__item">
+            <label class="dropdown-calendar__label h3" for="start">Даты пребывания в отеле</label>
+            <input class="date-start" type="text" id="start" placeholder="ДД.ММ.ГГГГ" data-range="true" autocomplete="off"><i class="dropdown-calendar__icon">expand_more</i>
+          </div>
+        </div>
+        <div class="dropdown filters__guest">
+          <h3 class="dropdown-title">Гости</h3>
+          <div class="dropdown-list dropdown--guest">
+            <div class="dropdown__header">
+              <div class="dropdown__header-value" data-title="Сколько гостей">Сколько гостей</div><i class="dropdown__icon">expand_more</i>
+            </div>
+            <div class="dropdown__list-items">
+              <div class="dropdown__item">
+                <p class="dropdown__item-title">взрослые</p>
+                <div class="dropdown__input-control">
+                  <button class="minus" disabled>-</button>
+                  <input class="input" type="number" min="0" max="10" step="1" value="0">
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <div class="dropdown__item">
+                <p class="dropdown__item-title">дети</p>
+                <div class="dropdown__input-control">
+                  <button class="minus" disabled>-</button>
+                  <input class="input" type="number" min="0" max="10" step="1" value="0">
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <div class="dropdown__item">
+                <p class="dropdown__item-title">младенцы</p>
+                <div class="dropdown__input-control">
+                  <button class="minus" disabled>-</button>
+                  <input class="input" type="number" min="0" max="10" step="1" value="0">
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <div class="dropdown__button-block"><a class="button-link dropdown__clear">Очистить</a><a class="button-link dropdown__apply">Применить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="price-slider">
+          <h3 class="price-slider__title">диапазон цены</h3>
+          <input class="range-slider" type="slider">
+          <div class="price-slider__desc">Стоимость за сутки пребывания в номере</div>
+        </div>
+        <div class="checkbox-list checkbox-list--standart">
+          <div class="checkbox-list__header">
+            <h3 class="checkbox-list__title">правила дома</h3>
+          </div>
+          <div class="checkbox-list__items">
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-1">
+              <label class="checkbox__label" for="id-1">Можно курить</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-2">
+              <label class="checkbox__label" for="id-2">Можно с питомцами</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-3">
+              <label class="checkbox__label" for="id-3">Можно пригласить гостей (до 10 человек)</label>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-list checkbox-list--standart filters__additional-amenities">
+          <div class="checkbox-list__header">
+            <h3 class="checkbox-list__title">доступность</h3>
+          </div>
+          <div class="checkbox-list__items">
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-10">
+              <label class="checkbox__label" for="id-10"> 
+                <div class="checkbox__title">Широкий коридор</div>
+                <div class="checkbox__desc">Ширина коридоров в номере не менее 91 см.</div>
+              </label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-11">
+              <label class="checkbox__label" for="id-11"> 
+                <div class="checkbox__title">Помощник для инвалидов</div>
+                <div class="checkbox__desc">На 1 этаже вас встретит специалист и проводит до номера.</div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown filters__facilities">
+          <h3 class="dropdown-title">Удобства номера</h3>
+          <div class="dropdown-list dropdown--facilities">
+            <div class="dropdown__header">
+              <div class="dropdown__header-value" data-title="Удобства">Удобства</div><i class="dropdown__icon">expand_more</i>
+            </div>
+            <div class="dropdown__list-items">
+              <div class="dropdown__item">
+                <p class="dropdown__item-title">спальни</p>
+                <div class="dropdown__input-control">
+                  <button class="minus" disabled>-</button>
+                  <input class="input" type="number" min="0" max="10" step="1" value="0">
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <div class="dropdown__item">
+                <p class="dropdown__item-title">кровати</p>
+                <div class="dropdown__input-control">
+                  <button class="minus" disabled>-</button>
+                  <input class="input" type="number" min="0" max="10" step="1" value="0">
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <div class="dropdown__item">
+                <p class="dropdown__item-title">ванные комнаты</p>
+                <div class="dropdown__input-control">
+                  <button class="minus" disabled>-</button>
+                  <input class="input" type="number" min="0" max="10" step="1" value="0">
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <div class="dropdown__button-block"><a class="button-link dropdown__clear">Очистить</a><a class="button-link dropdown__apply">Применить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-list checkbox-list--dropwown">
+          <div class="checkbox-list__header">
+            <h3 class="checkbox-list__title">дополнительные удобства</h3><i class="checkbox-list__icon">expand_more</i>
+          </div>
+          <div class="checkbox-list__items">
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-4">
+              <label class="checkbox__label" for="id-4">Завтрак</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-5">
+              <label class="checkbox__label" for="id-5">Письменный стол</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-6">
+              <label class="checkbox__label" for="id-6">Стул для кормления</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-7">
+              <label class="checkbox__label" for="id-7">Кроватка</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-8">
+              <label class="checkbox__label" for="id-8">Телевизор</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="id-9">
+              <label class="checkbox__label" for="id-9">Шампунь</label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-content">
+        <div class="main-title h1">Номера, которые мы для вас подобрали</div>
+        <div class="rooms"></div>
+        <div class="pagination">
+          <div class="pagination__info"></div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__left-bar">
+            <div class="logo-group"><img class="logo-img" src="./images/logo/logo.png"><img class="logo-text" src="./images/logo/TOXIN.svg"></div>
+            <div class="footer__left-bar-info">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+          </div>
+              <div class="footer-menu"></div>
+          <div class="footer__right-bar">
+            <div class="footer__right-bar-title h3">Подписка</div>
+            <div class="footer__right-bar-info">Получайте специальные предложения и новости сервиса</div>
+                <div class="text-field">
+                  <input class="text-field__input" type="text" id="name label" name="name label" placeholder="Email"><i class="input__icon">arrow_forward</i>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-bar">
+        <div class="container">
+              <div class="copyright">Copyright © 2018 Toxin отель. Все права защищены.</div>
+              <div class="social-links"><a class="social-links__link" href="#"><i class="fab fa-twitter"></i></a><a class="social-links__link" href="#"><img class="icon-img" src="./images/facebook-icon.svg" alt="social-icon"></a><a class="social-links__link" href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+        </div>
+      </div>
+    </footer>
+  <script src="/vendors.js"></script><script src="/app.js"></script></body>
+</html>

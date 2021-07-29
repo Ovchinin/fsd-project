@@ -4,7 +4,6 @@ function Rating() {
         Array.prototype.forEach.call(starRating, function (element) {
             element.addEventListener('click', function (event) {
                 let dataAtr = event.target.dataset.value;
-                //console.log('click-' + dataAtr);
                 let parent = event.target.parentElement;
                 let icon = parent.querySelectorAll('.star-rating__icon');
                 Array.prototype.forEach.call(icon, function (item) {

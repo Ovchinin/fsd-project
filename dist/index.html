@@ -17,8 +17,8 @@
     <section>
       <div class="container">
         <div class="text-field">
-          <label class="text-field__label" for="name label">Text Field</label>
-          <input class="text-field__input" type="text" id="name label" name="name label" placeholder="Email">
+          <label class="text-field__label" for="test">Text Field</label>
+          <input class="text-field__input" type="text" id="test" name="test" placeholder="Email">
         </div><br>
         <div class="toggle">
           <input class="toggle__input" type="checkbox" id="toggle" name="toggle">
@@ -72,8 +72,11 @@
           <div class="star-rating__user"><i class="material-icons star-rating__icon" data-value="2">star_border</i><i class="material-icons star-rating__icon" data-value="3">star_border</i><i class="material-icons star-rating__icon" data-value="4">star_border</i><i class="material-icons star-rating__icon" data-value="5">star_border</i><i class="material-icons star-rating__icon" data-value="6">star_border</i><i class="material-icons star-rating__icon" data-value="7">star_border</i><i class="material-icons star-rating__icon" data-value="8">star_border</i>
           </div>
         </div><br><a class="button-full">click me</a><br><a class="button-border">click me</a><br><a class="button-link">click me</a><br><a class="button-100">перейти к оплате<i class="button__icon">arrow_forward</i></a><br>
-        <input class="range-slider" type="slider"><br>
-        <input class="range-slider" type="slider"><br>
+        <div class="price-slider">
+          <h3 class="price-slider__title">диапазон цены</h3>
+          <input class="range-slider" type="slider">
+          <div class="price-slider__desc">Стоимость за сутки пребывания в номере</div>
+        </div><br><br>
         <div class="pagination">
           <div class="pagination__info"></div>
         </div><br>
@@ -108,11 +111,11 @@
                   <button class="plus">+</button>
                 </div>
               </div>
-              <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+              <div class="dropdown__button-block"><a class="button-link dropdown__clear">Очистить</a><a class="button-link dropdown__apply">Применить</a>
               </div>
             </div>
           </div>
-        </div>
+        </div><br>
         <div class="dropdown">
           <h3 class="dropdown-title">Удобства</h3>
           <div class="dropdown-list dropdown--facilities">
@@ -144,7 +147,7 @@
                   <button class="plus">+</button>
                 </div>
               </div>
-              <div class="dropdown__button-block"><a class="button-link dropdown__clear">Сбросить</a><a class="button-link dropdown__apply">Применить</a>
+              <div class="dropdown__button-block"><a class="button-link dropdown__clear">Очистить</a><a class="button-link dropdown__apply">Применить</a>
               </div>
             </div>
           </div>
@@ -231,13 +234,25 @@
         <div class="dropdown-calendar">
           <div class="dropdown-calendar__item">
             <label class="dropdown-calendar__label h3" for="start">Прибытие</label>
-            <input class="date-start" type="text" id="start" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+            <input class="date-start" type="text" id="start" placeholder="ДД.ММ.ГГГГ" data-range="true" autocomplete="off"><i class="dropdown-calendar__icon">expand_more</i>
           </div>
           <div class="dropdown-calendar__item">
             <label class="dropdown-calendar__label h3" for="end">Выезд</label>
-            <input class="date-end" type="text" id="end" placeholder="ДД.ММ.ГГГГ" data-range="true" data-user-min-date="true"><i class="dropdown-calendar__icon">expand_more</i>
+            <input class="date-end" type="text" id="end" placeholder="ДД.ММ.ГГГГ" data-range="true" autocomplete="off"><i class="dropdown-calendar__icon">expand_more</i>
           </div>
-        </div><br><br>
+        </div><br>
+        <div class="dropdown-calendar">
+          <div class="dropdown-calendar__item">
+            <label class="dropdown-calendar__label h3" for="start2">Даты пребывания в отеле</label>
+            <input class="date-start" type="text" id="start2" placeholder="ДД.ММ.ГГГГ" data-range="true" autocomplete="off"><i class="dropdown-calendar__icon">expand_more</i>
+          </div>
+        </div><br>
+        <div class="dropdown-calendar">
+          <div class="dropdown-calendar__item">
+            <label class="dropdown-calendar__label h3" for="start3">Дата прождения</label>
+            <input class="date-start" type="text" id="start3" placeholder="ДД.ММ.ГГГГ" autocomplete="off">
+          </div>
+        </div><br>
         <div class="advantages">
           <div class="advantages__item"><i class="advantages__icon">insert_emoticon</i>
             <div class="advantages__info">
@@ -290,7 +305,7 @@
       <div class="copyright-bar">
         <div class="container">
               <div class="copyright">Copyright © 2018 Toxin отель. Все права защищены.</div>
-              <div class="social-links"><a class="social-links__link" href="#"><i class="fab fa-twitter"></i></a><a class="social-links__link" href="#"><i class="fab fa-facebook-square"></i></a><a class="social-links__link" href="#"><i class="fab fa-instagram"></i></a><a class="social-links__link" href="#"><img src="./images/facebook-icon.png" alt="social-icon"></a>
+              <div class="social-links"><a class="social-links__link" href="#"><i class="fab fa-twitter"></i></a><a class="social-links__link" href="#"><img class="icon-img" src="./images/facebook-icon.svg" alt="social-icon"></a><a class="social-links__link" href="#"><i class="fab fa-instagram"></i></a>
               </div>
         </div>
       </div>

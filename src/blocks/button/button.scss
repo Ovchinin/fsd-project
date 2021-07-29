@@ -47,7 +47,7 @@
 
     position: relative;
     display: inline-block;
-    padding: 10px 18px 10px 18px;
+    padding: 10px 19px 10px 18px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -69,7 +69,7 @@
     width: 100%;
     position: relative;
     display: inline-block;
-    padding: 14px 20px;
+    padding: 17px 91px;
     color: #fff;
     background: $purpleGradient;
     border-radius: 22px;
@@ -77,9 +77,9 @@
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 10px;
     text-transform: uppercase;
-    text-align: center;
+    //text-align: center;
     cursor: pointer;
 
     &:hover {

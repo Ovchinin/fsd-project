@@ -1,31 +1,24 @@
 include ../../../bundles/form-element.bundle.pug
 
-mixin room-preview(images)
+mixin room-preview(options)
     .room-preview
         .room-preview__slider
-            +slick-carousel({
-                images: [
-                    {src: './images/slider/room1.jpg'},
-                    {src: './images/slider/room2.jpg'},
-                    {src: './images/slider/room1.jpg'},
-                    {src: './images/slider/room2.jpg'},
-                ]
-            })
+            +slick-carousel(options.images)
         
         .room-preview__header
             .room-preview__number-group
                 span.room-preview__number='№'
-                span.room-preview__number-item='888'
-                span.room-preview__number-category='люкс'
+                span.room-preview__number-item=options.number
+                span.room-preview__number-category=options.type
             .room-preview__number-price-group
-                span.room-preview__number-price='9 990'
-                span.room-preview__number-currency-type='₽'
-                span.room-preview__number-per-day='в сутки'
+                span.room-preview__number-price=options.price
+                span.room-preview__number-currency-type=options.currency
+                span.room-preview__number-per-day=options.days
 
         .room-preview__rating-group
-            +star-rating(5, 5)
+            +star-rating(options.scale, options.current_rating)
             .room-preview__rating
-                span.room-preview__rating-count='145'
+                span.room-preview__rating-count=options.number_of_ratings
                 span.room-preview__rating-info='Отзывов'
 
             
