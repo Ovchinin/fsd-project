@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+  <link href="/vendors.css" rel="stylesheet"><link href="/app.css" rel="stylesheet"></head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav-bar">
+              <div class="logo-group"><img class="logo-img" src="./images/logo/logo.png"><img class="logo-text" src="./images/logo/TOXIN.svg"></div>
+              <div class="nav main-menu"></div>
+        </div>
+      </div>
+    </header>
+    <section class="registration">
+      <div class="container">
+        <form class="check-in-form content__registration-form">
+          <div class="check-in-form__title h1">Регистрация аккаунта</div>
+          <div class="text-field check-in-form__input сheck-in-form__input--name">
+            <input class="text-field__input" type="text" id="Name" name="Name" placeholder="Имя">
+          </div>
+          <div class="text-field check-in-form__input сheck-in-form__input--surname">
+            <input class="text-field__input" type="text" id="Surname" name="Surname" placeholder="Фамилия">
+          </div>
+          <div class="radio-buttons check-in-form__sex">
+            <div class="radio-buttons__item">
+              <input class="radio-buttons__input" type="radio" id="man" value="man" name="sex">
+              <label class="radio-buttons__label" for="man">Мужчина</label>
+            </div>
+            <div class="radio-buttons__item">
+              <input class="radio-buttons__input" type="radio" id="woman" value="woman" name="sex">
+              <label class="radio-buttons__label" for="woman">Женщина</label>
+            </div>
+          </div>
+          <div class="dropdown-calendar check-in-form__calendar">
+            <div class="dropdown-calendar__item">
+              <label class="dropdown-calendar__label h3" for="start3">Дата рождения</label>
+              <input class="date-start" type="text" id="start3" placeholder="ДД.ММ.ГГГГ" autocomplete="off">
+            </div>
+          </div>
+          <div class="text-field check-in-form__input сheck-in-form__input--email">
+            <label class="text-field__label" for="email-1">данные для входа в сервис</label>
+            <input class="text-field__input" type="email" pattern=".+@globex.com" id="email-1" name="email-1" placeholder="Email">
+          </div>
+          <div class="text-field check-in-form__input сheck-in-form__input--password">
+            <input class="text-field__input" type="password" id="password-1" name="password-1" placeholder="Пароль">
+          </div>
+          <div class="toggle check-in-form__toggle">
+            <input class="toggle__input" type="checkbox" id="toggle" name="toggle">
+            <label class="toggle__label" for="toggle">Получать спецпредложения</label>
+          </div><a class="button-100 check-in-form__button">зарегистрироваться<i class="button__icon">arrow_forward</i></a>
+          <div class="check-in-form__login">
+            <p class="check-in-form__login-text">Уже есть аккаунт на Toxin</p><a class="button-border check-in-form__login-btn">войти</a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__left-bar">
+            <div class="logo-group"><img class="logo-img" src="./images/logo/logo.png"><img class="logo-text" src="./images/logo/TOXIN.svg"></div>
+            <div class="footer__left-bar-info">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+          </div>
+              <div class="footer-menu"></div>
+          <div class="footer__right-bar">
+            <div class="footer__right-bar-title h3">Подписка</div>
+            <div class="footer__right-bar-info">Получайте специальные предложения и новости сервиса</div>
+                <div class="text-field">
+                  <input class="text-field__input" type="text" id="name label" name="name label" placeholder="Email"><i class="input__icon">arrow_forward</i>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-bar">
+        <div class="container">
+              <div class="copyright">Copyright © 2018 Toxin отель. Все права защищены.</div>
+              <div class="social-links"><a class="social-links__link" href="#"><i class="fab fa-twitter"></i></a><a class="social-links__link" href="#"><img class="icon-img" src="./images/facebook-icon.svg" alt="social-icon"></a><a class="social-links__link" href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+        </div>
+      </div>
+    </footer>
+  <script src="/vendors.js"></script><script src="/app.js"></script></body>
+</html>

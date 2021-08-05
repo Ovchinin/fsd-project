@@ -1,0 +1,18 @@
+@import '../blocks/headersAndFooters/header/header.scss';
+@import '../blocks/headersAndFooters/footer/footer.scss';
+@import '../blocks/logo/logo.scss';
+@import '../bundles/cards.bundle.scss';
+@import '../bundles/form-element.bundle.scss';
+
+.registration .check-in-form {
+    margin: 0 auto;
+}
+
+.registration {
+    background-image: url('/images/top-img-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding: 18px 0;
+}

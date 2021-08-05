@@ -1,20 +1,20 @@
 include ../../../bundles/form-element.bundle.pug
 
 mixin check-in-form(option)
-    form.check-in-form
+    form(class="check-in-form")&attributes(attributes)
         .check-in-form__title.h1=option.title
 
         +text-field({
             type: 'text',
             name: 'Name', 
             placeholder: 'Имя',
-        })(class="check-in-form__input")
+        })(class="check-in-form__input сheck-in-form__input--name")
 
         +text-field({
             type: 'text',
             name: 'Surname', 
             placeholder: 'Фамилия',
-        })(class="check-in-form__input")
+        })(class="check-in-form__input сheck-in-form__input--surname")
 
         +radio-buttons({
             items: [
@@ -26,7 +26,7 @@ mixin check-in-form(option)
         +dropdown-calendar({
             dataRange: false,
             items: [
-                {label: 'Дата прождения', id: 'start3', class: 'date-start'}, 
+                {label: 'Дата рождения', id: 'start3', class: 'date-start'}, 
             ],
         })(class="check-in-form__calendar")
 
@@ -36,17 +36,17 @@ mixin check-in-form(option)
             pattern:".+@globex.com",
             name: 'email-1', 
             placeholder: 'Email',
-        })(class="check-in-form__input")
+        })(class="check-in-form__input сheck-in-form__input--email")
 
         +text-field({
             type: 'password',
             name: 'password-1', 
             placeholder: 'Пароль',
-        })(class="check-in-form__input")
+        })(class="check-in-form__input сheck-in-form__input--password")
 
         +toggle('Получать спецпредложения', 'toggle')(class="check-in-form__toggle")
 
-        +button('100%', 'подобрать номер', true)(class="check-in-form__button")
+        +button('100%', 'зарегистрироваться', true)(class="check-in-form__button")
 
         .check-in-form__login
             p.check-in-form__login-text='Уже есть аккаунт на Toxin'

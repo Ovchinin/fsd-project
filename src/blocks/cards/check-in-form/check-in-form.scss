@@ -3,7 +3,7 @@
 .check-in-form {
     width: 380px;
     box-sizing: border-box;
-    padding: 40px 30px 30px 30px;
+    padding: 40px 29px 30px 29px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
@@ -11,13 +11,54 @@
     border-radius: 4px;
 }
 
-.check-in-form .check-in-form__input {
+.check-in-form__title {
+    margin-bottom: 21px;
+}
+
+.check-in-form__input {
     display: block;
+}
+
+.сheck-in-form__input--name {
+    margin-bottom: 10px;
+}
+
+.сheck-in-form__input--surname {
+    margin-bottom: 8px;
+}
+
+.check-in-form__sex {
+    margin-bottom: 17px;
+}
+
+.check-in-form__sex .radio-buttons__item {
+    margin-right: 16px;
+}
+
+.сheck-in-form__input--email {
+    margin-bottom: 10px;
+}
+
+.сheck-in-form__input--password {
+    margin-bottom: 8px;
+}
+
+.check-in-form__toggle {
+    margin-bottom: 22px;
+}
+
+.button-100.check-in-form__button {
+    margin-bottom: 30px;
+}
+
+.button-border.check-in-form__login-btn {
+    padding: 15px 24px 15px 25px;
 }
 
 .check-in-form {
     .check-in-form__calendar {
         width: 100%;
+        margin-bottom: 20px;
 
         .dropdown-calendar__item {
             width: 100%;

@@ -1,0 +1,13 @@
+extends ../templates/main.pug
+include ../bundles/registration.bundle.pug
+
+block variable
+    - var title = 'Registration';
+
+block main
+    section.registration
+        .container
+            +check-in-form({
+                title: 'Регистрация аккаунта',
+            })(class="content__registration-form")
+    

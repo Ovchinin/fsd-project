@@ -135,6 +135,12 @@ module.exports = {
             inject: true,
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/registration.pug',
+            filename: 'registration.html',
+            inject: true,
+            minify: false
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 { from: './src/blocks/_common/fonts/', to: './fonts' },
