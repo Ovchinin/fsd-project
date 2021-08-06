@@ -9,15 +9,15 @@ mixin authorization-form(option)
             pattern:".+@globex.com",
             name: 'email', 
             placeholder: 'Email',
-        })(class="authorization-form__input")
+        })(class="authorization-form__input authorization-form__input--email")
 
         +text-field({
             type: 'password',
             name: 'password', 
             placeholder: 'Пароль',
-        })(class="authorization-form__input")
+        })(class="authorization-form__input authorization-form__input--password")
 
-        +button('100%', 'подобрать номер', true)(class="authorization-form__button")
+        +button('100%', 'войти', true)(class="authorization-form__button")
 
         .authorization-form__login
             p.authorization-form__login-text='Нет аккаунта на Toxin?'

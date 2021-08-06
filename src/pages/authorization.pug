@@ -1,0 +1,13 @@
+extends ../templates/main.pug
+include ../bundles/authorization.bundle.pug
+
+block variable
+    - var title = 'Authorization';
+
+block main
+    section.authorization
+        .container
+            +authorization-form({
+                title: 'Войти',
+            })
+    

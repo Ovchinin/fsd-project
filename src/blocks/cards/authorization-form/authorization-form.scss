@@ -3,7 +3,7 @@
 .authorization-form {
     width: 380px;
     box-sizing: border-box;
-    padding: 40px 30px 30px 30px;
+    padding: 40px 29px 30px 29px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
@@ -11,8 +11,28 @@
     border-radius: 4px;
 }
 
+.authorization-form__title {
+    margin-bottom: 20px;
+}
+
+.authorization-form__input--email {
+    margin-bottom: 10px;
+}
+
+.authorization-form__input--password {
+    margin-bottom: 20px;
+}
+
+.authorization-form__button {
+    margin-bottom: 30px;
+}
+
 .authorization-form__login {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.button-border.authorization-form__login-btn {
+    padding: 15px 17px 15px 16px;
 }
